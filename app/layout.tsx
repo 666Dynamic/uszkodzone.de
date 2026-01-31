@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Samochody powypadkowe z Niemiec | Aukcje online | Uszkodzone.de',
   description: 'Kupuj auta powypadkowe z aukcji w Niemczech - od €2000. Licytacja kopertowa, transport, dokumenty. 8000+ aut dziennie.',
-  keywords: 'samochody powypadkowe, import aut z Niemiec, Restwertbörsen, aukcje samochodów, car.casion, uszkodzone auto, 130%-Regelung'
+  keywords: 'samochody powypadkowe, import aut z Niemiec, Restwertbörsen, aukcje samochodów, car.casion, uszkodzone auto, 130%-Regelung',
   authors: [{ name: 'Miami Autocenter GmbH' }],
   openGraph: {
     type: 'website',
