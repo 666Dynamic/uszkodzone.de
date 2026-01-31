@@ -6,27 +6,27 @@ import { FiTruck, FiClock, FiShield, FiPackage } from 'react-icons/fi'
 const stats = [
   {
     icon: FiPackage,
-    value: '12.000+',
+    value: '4.500+',
     label: 'Aut dostępnych dziennie',
-    description: 'Na wszystkich niemieckich platformach',
+    description: 'Z německich ubezpieczalni',
   },
   {
     icon: FiClock,
-    value: '2-3 tyg.',
-    label: 'Średni czas realizacji',
-    description: 'Od licytacji do odbioru w Polsce',
+    value: 'do 30 dni',
+    label: 'Czas na akceptację',
+    description: 'Ubezpieczalnia decyduje się na Twoją ofertę',
   },
   {
     icon: FiTruck,
-    value: 'od 1.300 zł',
+    value: 'Zorganizowany',
     label: 'Transport do Polski',
-    description: 'Laweta + ubezpieczenie + dokumenty',
+    description: 'Laweta + ubezpieczenie (koszt uzależniony)',
   },
   {
     icon: FiShield,
     value: '30 dni',
     label: 'Ważność oferty',
-    description: 'Oferta wiążąca - musisz kupić',
+    description: 'Oferta wiążąca - musisz kupić jeśli wygryjesz',
   },
 ]
 
