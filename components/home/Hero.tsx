@@ -65,7 +65,7 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
-              Dajemy Ci dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. 
+              Dostęp do 4.500+ aut dziennie z niemieckich ubezpieczalni. 
               Licytujesz auta, które w Niemczech są nieopłacalne do naprawy (130%-Regelung), 
               ale w Polsce można je tanio przywrócić do idealnego stanu.
             </p>
@@ -73,10 +73,10 @@ export default function Hero() {
             {/* Features List */}
             <div className="space-y-3 mb-8">
               {[
-                'Dostęp do 4.500+ aut dziennie z ubezpieczalni',
-                'Licytacja kopertowa - tylko ubezpieczalnia widzi Twoją ofertę',
-                'Transport do Polski zorganizowany',
-                'Wsparcie prawne i rejestracja w Polsce',
+                'Dostęp do 4.500+ aut dziennie z niemieckich ubezpieczalni',
+                'Licytacja kopertowa - nie widzisz innych ofert',
+                'Organizacja transportu do Polski',
+                'Pełne wsparcie podczas całego procesu',
               ].map((feature, index) => (
                 <motion.div
                   key={feature}

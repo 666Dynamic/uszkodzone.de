@@ -7,26 +7,26 @@ const stats = [
   {
     icon: FiPackage,
     value: '4.500+',
-    label: 'Aut dostępnych dziennie',
-    description: 'Z německich ubezpieczalni',
+    label: 'Aut dziennie',
+    description: 'Z niemieckich ubezpieczalni',
   },
   {
     icon: FiClock,
     value: 'do 30 dni',
     label: 'Czas na akceptację',
-    description: 'Ubezpieczalnia decyduje się na Twoją ofertę',
+    description: 'Ubezpieczalnia rozpatruje ofertę',
   },
   {
     icon: FiTruck,
-    value: 'Zorganizowany',
-    label: 'Transport do Polski',
-    description: 'Laweta + ubezpieczenie (koszt uzależniony)',
+    value: 'Organizujemy',
+    label: 'Transport',
+    description: 'Laweta + dokumenty',
   },
   {
     icon: FiShield,
     value: '30 dni',
-    label: 'Ważność oferty',
-    description: 'Oferta wiążąca - musisz kupić jeśli wygryjesz',
+    label: 'Czas rozpatrzenia',
+    description: 'Oferta wiążąca po akceptacji',
   },
 ]
 
