@@ -13,8 +13,8 @@ const steps = [
   {
     icon: FiFileText,
     number: '02',
-    title: 'Licytujemy w Twoim imieniu',
-    description: 'Wpłacasz wadium 2.500 zł (zwrotne przy przegranej). Podajesz maksymalną kwotę. Licytujemy za Ciebie na zamkniętych platformach. Twoja oferta jest wiążąca - po wygranej musisz kupić.',
+    title: 'Składasz ofertę',
+    description: 'Wpłacasz wadium 2.500 zł (zwrotne przy przegranej). Podajesz maksymalną kwotę, którą jesteś gotów zapłacić. Twoja oferta trafia bezpośrednio do ubezpieczalni. Jest wiążąca - po akceptacji musisz kupić.',
   },
   {
     icon: FiCheckCircle,
