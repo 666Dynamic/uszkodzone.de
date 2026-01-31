@@ -14,7 +14,7 @@ const steps = [
     icon: FiFileText,
     number: '02',
     title: 'Składasz ofertę',
-    description: 'Wpłacasz wadium 2.500 zł (zwrotne przy przegranej). Podajesz maksymalną kwotę, którą jesteś gotów zapłacić. Twoja oferta trafia bezpośrednio do ubezpieczalni. Jest wiążąca - po akceptacji musisz kupić.',
+    description: 'Wpłacasz wadium 2.500 zł (zwrotne przy przegranej). Podajesz maksymalną kwotę, którą jesteś gotów zapłacić. Twoja oferta trafia bezpośrednio do ubezpieczalni.',
   },
   {
     icon: FiCheckCircle,
@@ -65,7 +65,7 @@ export default function HowItWorks() {
                   <div className="hidden lg:block absolute top-16 left-[60%] w-full h-0.5 bg-gradient-to-r from-primary-300 to-transparent" />
                 )}
 
-                <div className="relative bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-primary-200 transition-colors">
+                <div className="relative bg-white p-6 rounded-xl border-2 border-gray-100 hover:border-primary-200 transition-colors h-full min-h-[280px] flex flex-col">
                   {/* Number Badge */}
                   <div className="absolute -top-4 -right-4 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-lg shadow-lg">
                     {step.number}
