@@ -39,10 +39,10 @@ export default function ArticleBindingOffer() {
               </p>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Co to znaczy "oferta wiążąca"?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Co to znaczy &quot;oferta wiążąca&quot;?</h2>
             
             <p className="mb-6">
-              W polskim e-commerce jesteśmy przyzwyczajeni że "dodaję do koszyka" nie zobowiązuje do niczego. 
+              W polskim e-commerce jesteśmy przyzwyczajeni że &quot;dodaję do koszyka&quot; nie zobowiązuje do niczego. 
               Możemy anulować zamówienie, zrezygnować, zwrócić towar (14 dni). 
               <strong>Na niemieckich Restwertbörsen działa to CAŁKOWICIE INACZEJ.</strong>
             </p>
@@ -67,7 +67,7 @@ export default function ArticleBindingOffer() {
                 <ul className="space-y-2 text-sm">
                   <li>✗ NIE możesz anulować oferty</li>
                   <li>✗ BRAK prawa do zwrotu</li>
-                  <li>✗ Sprzedaż "jak widzisz" (as-is)</li>
+                  <li>✗ Sprzedaż &quot;jak widzisz&quot; (as-is)</li>
                   <li>✗ Kary za wycofanie się</li>
                 </ul>
               </div>
@@ -162,7 +162,7 @@ export default function ArticleBindingOffer() {
 
               <div className="border-t pt-4 mb-4">
                 <p className="font-bold text-green-700 mb-2">✓ Dzień 8: Ubezpieczalnia akceptuje ofertę!</p>
-                <p className="text-sm">Pan Kowalski dostaje email: "Gratulacje, Twoja oferta została zaakceptowana"</p>
+                <p className="text-sm">Pan Kowalski dostaje email: &quot;Gratulacje, Twoja oferta została zaakceptowana&quot;</p>
               </div>
 
               <div className="border-t pt-4 bg-white p-4 rounded">
@@ -198,7 +198,7 @@ export default function ArticleBindingOffer() {
                   <span className="text-2xl">2️⃣</span> Licytuj TYLKO auta które NA PEWNO chcesz
                 </h3>
                 <p className="text-sm text-gray-700">
-                  Nie licytuj "na próbę" ani "żeby zobaczyć". Każda oferta = prawne zobowiązanie.
+                  Nie licytuj &quot;na próbę&quot; ani &quot;żeby zobaczyć&quot;. Każda oferta = prawne zobowiązanie.
                 </p>
               </div>
 
@@ -216,7 +216,7 @@ export default function ArticleBindingOffer() {
                   <span className="text-2xl">4️⃣</span> Upewnij się że masz płynność finansową
                 </h3>
                 <p className="text-sm text-gray-700">
-                  Jeśli wygrasz, masz 7-14 dni na płatność. Pożyczka "po fakcie" może się nie udać.
+                  Jeśli wygrasz, masz 7-14 dni na płatność. Pożyczka &quot;po fakcie&quot; może się nie udać.
                 </p>
               </div>
 

@@ -109,8 +109,8 @@ export default function Restwertborsen() {
               <strong className="text-gray-900">1. Zasada 130%-Regelung:</strong> W Niemczech obowiązuje 
               specjalna zasada prawna. Gdy (koszt naprawy + wartość rezydualna pojazdu) przekracza 
               130% wartości przed szkodą, ubezpieczyciel MUSI sklasyfikować pojazd jako szkodę całkowitą. 
-              Dla przykładu: BMW warte 50.000 zł z naprawą za 45.000 zł to w Niemczech "ekonomiczna 
-              szkoda całkowita", gdyż przekracza próg 130%.
+              Dla przykładu: BMW warte 50.000 zł z naprawą za 45.000 zł to w Niemczech &quot;ekonomiczna 
+              szkoda całkowita&quot;, gdyż przekracza próg 130%.
             </p>
             <p>
               <strong className="text-gray-900">2. Wykup przez ubezpieczyciela:</strong> 
@@ -125,7 +125,7 @@ export default function Restwertborsen() {
             </p>
             <p>
               <strong className="text-gray-900">4. Opłacalna naprawa w Polsce:</strong> To 
-              co w Niemczech jest „ekonomiczną szkodą całkowitą" (przez wysokie koszty pracy po 
+              co w Niemczech jest &quot;ekonomiczną szkodą całkowitą&quot; (przez wysokie koszty pracy po 
               50-100€/h), w Polsce może być opłacalne do naprawy dzięki niższym kosztom robocizny 
               (20-40€/h) i części zamiennych.
             </p>

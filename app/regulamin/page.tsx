@@ -71,7 +71,7 @@ export default function RegulaminPage() {
             </h2>
             <p className="text-gray-600 mb-4">
               Operator nie ponosi odpowiedzialności za ukryte wady pojazdu nieujawnione 
-              w dokumentacji ubezpieczalni. Użytkownik kupuje pojazd w stanie „jak jest".
+              w dokumentacji ubezpieczalni. Użytkownik kupuje pojazd w stanie &quot;jak jest&quot;.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
