@@ -11,12 +11,14 @@ Uszkodzone.de to profesjonalna platforma umożliwiająca zakup powypadkowych sam
 - Winvalue
 
 ### Kluczowe funkcjonalności:
-- 🔍 Dostęp do ponad 4500 aut dziennie
+- 🔍 Dostęp do 8.000+ aut dziennie ze wszystkich platform
 - 📊 Szczegółowe raporty szkód i kalkulacje napraw
-- 🎯 System licytacji kopertowej (w ciemno)
-- 🚚 Transport pod dom
+- 🎯 Licytacja kopertowa (anonimowa)
+- 🚚 Transport do Polski (€300-€1.000)
 - 💰 Zwrotne wadium
-- 📝 Pełna dokumentacja
+- 📝 Pełna dokumentacja i wsparcie
+- ✅ SEO-optimized
+- 📱 Fully responsive (mobile-first)
 
 ## 🛠 Stack technologiczny
 
@@ -35,10 +37,16 @@ uszkodzone.de/
 │   ├── layout.tsx              # Root layout z SEO
 │   ├── page.tsx                # Strona główna
 │   ├── globals.css             # Globalne style
+│   ├── not-found.tsx           # 404 page
 │   ├── aukcje/                 # Strona aukcji (integracja z car.casion)
 │   ├── jak-to-dziala/          # Proces krok po kroku
 │   ├── kalkulator/             # Kalkulator kosztów
+│   ├── koszty/                 # Przejrzystość kosztów
+│   ├── o-nas/                  # O firmie Miami Autocenter
 │   ├── wiedza/                 # Baza wiedzy
+│   │   ├── czym-jest-130-regelung/
+│   │   ├── oferta-wiazaca/
+│   │   └── ukryte-uszkodzenia/
 │   ├── blog/                   # Blog
 │   ├── kontakt/                # Formularz kontaktowy
 │   ├── polityka-prywatnosci/   # RODO
@@ -48,16 +56,30 @@ uszkodzone.de/
 │   ├── Footer.tsx              # Stopka z linkami
 │   └── home/                   # Komponenty strony głównej
 │       ├── Hero.tsx            # Sekcja hero z CTA
-│       ├── Stats.tsx           # Statystyki (4500+, 30 dni, itp.)
+│       ├── Stats.tsx           # Statystyki
 │       ├── Restwertborsen.tsx  # Wyjaśnienie Restwertbörsen
 │       ├── HowItWorks.tsx      # Proces w 4 krokach
 │       ├── FeaturedCars.tsx    # Przykładowe auta
 │       ├── WhyGermany.tsx      # Porównanie DE/CH/USA
-│       ├── FAQ.tsx             # Accordion z FAQ
-│       └── FinalCTA.tsx        # Końcowe wezwanie do działania
-├── public/                     # Statyczne pliki (obrazy, favicon)
-├── tailwind.config.ts          # Konfiguracja Tailwind (kolory primary)
-└── next.config.js              # Konfiguracja Next.js
+│       ├── FAQ.tsx             # FAQ Accordion
+│       └── FinalCTA.tsx        # Ending CTA
+├── lib/
+│   ├── api.ts                  # Mock API + car.casion integration
+│   ├── config.ts               # Konfiguracja aplikacji
+│   └── utils.ts                # Utility functions
+├── types/
+│   └── index.ts                # TypeScript types
+├── public/
+│   ├── robots.txt              # SEO robots
+│   ├── sitemap.xml             # XML sitemap
+│   ├── manifest.json           # PWA manifest
+│   └── og-image.jpg            # OG image (do dodania)
+├── .env.example                # Environment variables template
+├── tailwind.config.ts          # Tailwind CSS config
+├── tsconfig.json               # TypeScript config
+├── next.config.js              # Next.js config
+├── package.json                # Dependencies
+└── README.md                   # This file
 ```
 
 ## 🚀 Instalacja i uruchomienie
@@ -176,17 +198,115 @@ Każda strona ma zoptymalizowane:
 
 ## 🚀 Deployment
 
-### Vercel (zalecane):
+### Vercel (ZALECANE - 0 konfiguracji):
 ```bash
-# Zainstaluj Vercel CLI
+# 1. Zainstaluj Vercel CLI
 npm i -g vercel
 
-# Deploy
+# 2. Deploy (automatycznie wypushuje na GitHub)
 vercel
+
+# 3. Ustawienia środowiska (w Vercel Dashboard):
+# - Ustaw NODE_ENV=production
+# - Dodaj CAR_CASION_API_KEY, itp.
 ```
 
-### Własny serwer:
+### Railway / Fly.io:
 ```bash
+# Railway:
+npm install -g @railway/cli
+railway link  # Wybierz projekt
+railway deploy
+
+# Fly.io:
+npm install -g @flydotio/flyctl
+fly launch
+fly deploy
+```
+
+### Docker (własny serwer):
+```bash
+# Build
+docker build -t uszkodzone-de .
+
+# Run
+docker run -p 3000:3000 \
+  -e NEXT_PUBLIC_API_URL=https://uszkodzone.de \
+  -e CAR_CASION_API_KEY=xxx \
+  uszkodzone-de
+```
+
+### Environment variables (konfiguracja w Vercel/Railway):
+```
+NODE_ENV=production
+NEXT_PUBLIC_API_URL=https://uszkodzone.de
+CAR_CASION_API_KEY=your_key_here
+CAR_CASION_API_URL=https://api.car.casion/v1
+CAR_CASION_WEBHOOK_SECRET=your_secret_here
+```
+
+## ✅ Pre-deployment Checklist
+
+- [x] Wszystkie strony loadują bez błędów
+- [x] SEO metadata complete (title, description, OG)
+- [x] Responsive design (mobile, tablet, desktop)
+- [x] Navigation complete (Header, Footer, Sitemap)
+- [x] 404 page
+- [ ] favicon.ico
+- [ ] og-image.jpg (1200x630px)
+- [ ] Google Search Console verification
+- [ ] Analytics setup (Google Analytics, Hotjar)
+- [ ] Email forma do testowania
+- [ ] Production environment variables
+
+## 📊 TO-DO List
+
+### Phase 1: MVP (Launch Ready):
+- [x] Landing page
+- [x] Navigation & routing
+- [x] SEO optimization
+- [x] Responsive design
+- [ ] Favicon + OG image
+- [ ] Error tracking (Sentry)
+
+### Phase 2: Integration:
+- [ ] Car.casion API integration
+- [ ] Real-time auction data
+- [ ] User authentication
+- [ ] Payment integration (Stripe)
+
+### Phase 3: Enhancement:
+- [ ] Interactive calculator
+- [ ] User dashboard
+- [ ] Bid management
+- [ ] Email notifications
+
+### Phase 4: Scale:
+- [ ] Multi-language support
+- [ ] Blog with CMS
+- [ ] Mobile app
+- [ ] Affiliate program
+
+## 📞 Support & Contact
+
+- **Email**: kontakt@uszkodzone.de
+- **GitHub**: https://github.com/666Dynamic/uszkodzone.de
+- **Docs**: /wiedza /jak-to-dziala
+
+## 📄 License
+
+MIT License - See LICENSE file
+
+## 🙏 Acknowledgments
+
+- Inspired by Apple, Stripe, Revolut design principles
+- Built with Next.js, Tailwind CSS, Framer Motion
+- Hosted on Vercel
+
+---
+
+**Built with ❤️ for Polish car importers**
+
 # Build
 npm run build
 

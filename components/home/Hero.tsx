@@ -73,10 +73,10 @@ export default function Hero() {
             {/* Features List */}
             <div className="space-y-3 mb-8">
               {[
-                'Dostęp do ponad 8.000 nowych aut dziennie',
-                'Anonimowa licytacja - nikt nie widzi Twojej oferty',
-                'Pomoc w transporcie do Polski (od 1.300 zł)',
-                'Pełne wsparcie prawne i dokumentacyjne',
+                'Dostęp do 8.000+ aut dziennie ze wszystkich platform',
+                'Licytacja kopertowa - gwarantowana anonimowość',
+                'Transport do Polski (€300-€1000) + dokumenty',
+                'Wsparcie prawne i rejestracja w Polsce',
               ].map((feature, index) => (
                 <motion.div
                   key={feature}

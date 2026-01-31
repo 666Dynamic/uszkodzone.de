@@ -6,10 +6,12 @@ const navigation = {
     { name: 'Aukcje', href: '/aukcje' },
     { name: 'Jak to działa', href: '/jak-to-dziala' },
     { name: 'Kalkulator', href: '/kalkulator' },
+    { name: 'Koszty', href: '/koszty' },
   ],
   resources: [
     { name: 'Wiedza', href: '/wiedza' },
     { name: 'Blog', href: '/blog' },
+    { name: 'O nas', href: '/o-nas' },
     { name: 'FAQ', href: '/#faq' },
   ],
   legal: [

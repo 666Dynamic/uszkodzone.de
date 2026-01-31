@@ -11,9 +11,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Uszkodzone.de - Samochody powypadkowe z niemieckich giełd ubezpieczeniowych',
-  description: 'Kup auto powypadkowe bezpośrednio z niemieckich giełd ubezpieczeniowych (Restwertbörsen). Ponad 4500 aut dziennie, transport pod dom, licytacja kopertowa. Miami Autocenter GmbH - Twój sprawdzony partner.',
-  keywords: 'samochody powypadkowe, aukcje samochodów, Niemcy, Restwertbörsen, car.casion, auto z ubezpieczalni, szkoda całkowita, powypadkowe auta',
+  title: 'Samochody powypadkowe z Niemiec | Aukcje online | Uszkodzone.de',
+  description: 'Kupuj auta powypadkowe z aukcji w Niemczech - od €2000. Licytacja kopertowa, transport, dokumenty. 8000+ aut dziennie.',
+  keywords: 'samochody powypadkowe, import aut z Niemiec, Restwertbörsen, aukcje samochodów, car.casion, uszkodzone auto, 130%-Regelung'
   authors: [{ name: 'Miami Autocenter GmbH' }],
   openGraph: {
     type: 'website',
@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code',
+  },
+  alternates: {
+    canonical: 'https://uszkodzone.de',
   },
 }
 

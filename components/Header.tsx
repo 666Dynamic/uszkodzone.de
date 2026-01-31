@@ -17,6 +17,8 @@ const navigation = [
       { name: 'Ukryte uszkodzenia', href: '/wiedza/ukryte-uszkodzenia' },
     ]
   },
+  { name: 'Koszty', href: '/koszty' },
+  { name: 'O nas', href: '/o-nas' },
   { name: 'Blog', href: '/blog' },
   { name: 'Kontakt', href: '/kontakt' },
 ]
