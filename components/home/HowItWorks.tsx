@@ -97,25 +97,13 @@ export default function HowItWorks() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <p className="text-lg text-gray-600 mb-6">
-            Chcesz poznać szczegóły procesu i dowiedzieć się więcej?
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/jak-to-dziala"
-              className="btn-primary inline-flex items-center gap-2"
-            >
-              <span>Szczegółowy przewodnik</span>
-              <FiArrowRight className="w-4 h-4" />
-            </Link>
-            <Link
-              href="/aukcje"
-              className="btn-secondary inline-flex items-center gap-2"
-            >
-              <span>Zobacz dostępne auta</span>
-              <FiArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <Link
+            href="/jak-to-dziala"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            <span>Dowiedz się więcej</span>
+            <FiArrowRight className="w-4 h-4" />
+          </Link>
         </motion.div>
       </div>
     </section>
