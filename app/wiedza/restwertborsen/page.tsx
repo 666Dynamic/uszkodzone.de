@@ -1,194 +1,228 @@
-import { Metadata } from 'next'
-import { FiLock, FiGlobe, FiCheckCircle } from 'react-icons/fi'
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { FiArrowLeft, FiInfo, FiLock, FiGlobe, FiAlertTriangle } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Czym są Restwertbörsen? | Uszkodzone.de',
-  description: 'Restwertbörsen to niemieckie aukcje pojazdy. Jak działają, jak trafiają tam pojazdy, zasada 130%-Regelung. Pełne wyjaśnienie dla polskich importerów.',
-  keywords: 'Restwertbörsen, 130%-Regelung, niemieckie aukcje, ubezpieczalnia, pojazdy, import'
+  title: 'Czym są Restwertbörsen? | Niemieckie giełdy pozostałości | Uszkodzone.de',
+  description: 'Wszystko o niemieckich giełdach pozostałości ubezpieczeniowych (Restwertbörsen). Jak działają, zasada 130%-Regelung, dostęp tylko dla licencjonowanych firm.',
+  keywords: 'Restwertbörsen, giełdy pozostałości, Totalschaden, 130%-Regelung, niemieckie ubezpieczalnie, szkoda całkowita',
 }
 
 export default function RestwertborsenPage() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-24">
+    <div className="pt-24 min-h-screen bg-gray-50">
       <div className="container-custom py-12">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="mb-12">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Czym są<br />
-              <span className="text-primary-600">Restwertbörsen?</span>
-            </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Restwertbörsen to zamknięte niemieckie platformy aukcyjne, gdzie ubezpieczalnie sprzedają pojazdy 
-              uznane za szkodę całkowitą. To kluczowe źródło tanich, wysokiej jakości aut dla polskich importerów.
-            </p>
+        {/* Back Link */}
+        <Link 
+          href="/wiedza" 
+          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 transition-colors"
+        >
+          <FiArrowLeft className="w-4 h-4" />
+          <span>Powrót do bazy wiedzy</span>
+        </Link>
+
+        {/* Header */}
+        <div className="max-w-4xl mx-auto bg-white rounded-xl p-8 lg:p-12 shadow-lg mb-8">
+          <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <FiInfo className="w-4 h-4" />
+            <span>Kompletny przewodnik</span>
           </div>
-
-          {/* Info Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <FiLock className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Zamknięte platformy</h3>
-              <p className="text-gray-600">
-                Dostęp mają tylko zweryfikowani dealerzy i firmy z licencjami. Prywatne osoby nie mogą kupować bezpośrednio.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <FiGlobe className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Główne giełdy</h3>
-              <p className="text-gray-600">
-                Mamy dostęp do największych platform, na których ubezpieczalnie AXA, Allianz, HUK-COBURG sprzedają pojazdy.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <FiCheckCircle className="w-6 h-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Licytacja kopertowa</h3>
-              <p className="text-gray-600">
-                Dajesz swoją maksymalną ofertę, nie widząc ofert innych. Ubezpieczalnia wybiera najwyższą.
-              </p>
-            </div>
-          </div>
+          
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+            Czym są <span className="text-primary-600">Restwertbörsen</span>?
+          </h1>
+          
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
+            Niemieckie giełdy pozostałości ubezpieczeniowych (Restwertbörsen) to zamknięte platformy aukcyjne, 
+            na których ubezpieczalnie sprzedają pojazdy po szkodach całkowitych. Dostęp mają tylko licencjonowane 
+            firmy motoryzacyjne.
+          </p>
 
           {/* Main Content */}
-          <div className="bg-white rounded-xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Jak pojazdy trafiają na Restwertbörsen?</h2>
+          <div className="prose prose-lg max-w-none">
             
-            <div className="space-y-6">
-              {/* Step 1 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-600 text-white font-bold">
-                    1
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Zasada 130%-Regelung</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    W Niemczech obowiązuje specjalna zasada prawna. Gdy (koszt naprawy + wartość rezydualna pojazdu) 
-                    przekracza 130% wartości pojazdu przed szkodą, ubezpieczyciel MUSI sklasyfikować pojazd jako 
-                    nieopłacalny do naprawy.
-                  </p>
-                  <p className="text-gray-600 mt-2 leading-relaxed">
-                    <strong>Przykład:</strong> BMW warte 50.000 zł z naprawą za 45.000 zł to w Niemczech &quot;ekonomiczna 
-                    szkoda całkowita&quot;, bo razem to 95.000 zł, co przekracza 130% z 50.000 zł (= 65.000 zł).
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-600 text-white font-bold">
-                    2
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Odkup przez ubezpieczalnię</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Ubezpieczalnia wypłaca odszkodowanie właścicielowi (wartość pojazdu minus wartość rezydualna) 
-                    i przejmuje pojazd na własność. Właściciel oddaje auto i dostaje pieniądze - dla niego sprawa załatwiona.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-600 text-white font-bold">
-                    3
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Wystawienie na aukcję</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Pojazd trafia na zamkniętą platformę (Restwertbörse), gdzie licytują tylko zweryfikowani dealerzy 
-                    i firmy z licencjami. My jako licencjonowana firma mamy dostęp i działamy w Twoim imieniu.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-600 text-white font-bold">
-                    4
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Opłacalna naprawa w Polsce</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    To co w Niemczech jest nieopłacalne (koszty pracy 50-100€/h), w Polsce jest opłacalne dzięki 
-                    niższym kosztom robocizny (20-40€/h) i taniej dostępnym częściom zamiennym.
-                  </p>
-                </div>
-              </div>
-
-              {/* Step 5 */}
-              <div className="flex gap-4">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-8 w-8 rounded-full bg-primary-600 text-white font-bold">
-                    5
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Realne marże dla dealera</h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Po uwzględnieniu wszystkich kosztów (zakup na aukcji, transport ~2-4K zł, naprawy, rejestracja), 
-                    realistyczna marża wynosi 15-25% wartości końcowej. Auto warte 50.000 zł na polskim rynku 
-                    możesz kupić za ok. 35.000-40.000 zł z wszystkimi kosztami.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Key Points */}
-          <div className="bg-primary-50 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Ważne informacje o licytacji</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Co to jest Totalschaden?</h2>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <h4 className="font-bold text-gray-900 mb-2">✓ Oferta wiążąca przez 30 dni</h4>
-                <p className="text-gray-700 text-sm">Po wygraniu aukcji ubezpieczalnia ma 30 dni na decyzję. Jeśli akceptuje - musisz kupić.</p>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-gray-900 mb-2">✓ Brak możliwości wycofania</h4>
-                <p className="text-gray-700 text-sm">Jeśli przegrasz i ubezpieczalnia zaakceptuje inną ofertę, tracisz. To poważna zobowiązanie.</p>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-gray-900 mb-2">✓ Analiza przed licytacją</h4>
-                <p className="text-gray-700 text-sm">Każdy pojazd ma 50-150 zdjęć, raport biegłego, historię napraw. Musisz wszystko sprawdzić.</p>
-              </div>
-
-              <div>
-                <h4 className="font-bold text-gray-900 mb-2">✓ Transport i dokumenty</h4>
-                <p className="text-gray-700 text-sm">My organizujemy transport z Niemiec, ubezpieczenie, odpowiednie dokumenty do Polski.</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom CTA */}
-          <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl p-8 text-white text-center">
-            <h2 className="text-2xl font-bold mb-3">Gotowy do licytacji?</h2>
-            <p className="mb-6 text-primary-100">
-              Sprawdź aktualnie dostępne pojazdy i zacznij swoją przygodę z importem aut z Niemiec.
+            <p className="text-gray-600 mb-6">
+              <strong>Totalschaden</strong> (szkoda całkowita) w niemieckim prawie ubezpieczeniowym oznacza pojazd, 
+              którego naprawa jest ekonomicznie nieopłacalna według zasady <strong>130%-Regelung</strong>.
             </p>
-            <a 
-              href="/aukcje"
-              className="inline-block bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Przejdź do aukcji
-            </a>
+
+            <div className="bg-primary-50 border-l-4 border-primary-600 p-6 rounded mb-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <FiAlertTriangle className="text-primary-600" />
+                Zasada 130%-Regelung
+              </h3>
+              <p className="mb-4">
+                W Niemczech obowiązuje specjalna zasada prawna: gdy <strong>(koszt naprawy + wartość rezydualna pojazdu)</strong> przekracza 
+                <strong> 130% wartości pojazdu przed szkodą</strong>, ubezpieczyciel MUSI sklasyfikować pojazd jako szkodę całkowitą.
+              </p>
+              
+              <div className="bg-white p-4 rounded mt-4">
+                <p className="font-bold mb-2">Przykład:</p>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• BMW 320d warte przed szkodą: <strong>€20.000</strong></li>
+                  <li>• Koszt naprawy w Niemczech: <strong>€18.000</strong></li>
+                  <li>• Wartość rezydualna (wrak): <strong>€8.000</strong></li>
+                  <li>• Razem: €18.000 + €8.000 = <strong>€26.000</strong></li>
+                  <li>• 130% z €20.000 = <strong>€26.000</strong></li>
+                  <li className="text-red-600 font-bold pt-2 border-t">→ AUTO = TOTALSCHADEN (szkoda całkowita)</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Jak pojazdy trafiają na Restwertbörsen?</h2>
+
+            <div className="space-y-6 mb-8">
+              <div className="bg-white border rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 1: Wypadek i wycena</h3>
+                <p className="text-gray-600">
+                  Po wypadku ubezpieczalnia wysyła rzeczoznawcę, który sporządza szczegółowy raport szkód. 
+                  Jeśli koszt naprawy + wartość rezydualna &gt; 130% wartości pojazdu → pojazd zostaje sklasyfikowany 
+                  jako Totalschaden.
+                </p>
+              </div>
+
+              <div className="bg-white border rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 2: Wykup przez ubezpieczyciela</h3>
+                <p className="text-gray-600">
+                  Ubezpieczalnia wypłaca właścicielowi odszkodowanie: <strong>(wartość pojazdu przed szkodą - wartość rezydualna)</strong>. 
+                  Właściciel oddaje pojazd ubezpieczalni, która przejmuje go na własność.
+                </p>
+                <div className="bg-gray-50 p-4 rounded mt-3">
+                  <p className="text-sm text-gray-700">
+                    <strong>Przykład:</strong> BMW warte €20.000, wartość rezydualna €8.000 → właściciel dostaje €12.000 
+                    i oddaje auto ubezpieczalni.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white border rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 3: Wystawienie na Restwertbörse</h3>
+                <p className="text-gray-600">
+                  Ubezpieczalnia umieszcza pojazd na zamkniętej giełdzie pozostałości (np. car.casion, AUTO1.com, mobile.de Business). 
+                  Tylko zweryfikowane firmy motoryzacyjne z licencją mogą składać oferty.
+                </p>
+              </div>
+
+              <div className="bg-white border rounded-lg p-6">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 4: Licytacja kopertowa</h3>
+                <p className="text-gray-600">
+                  Dealerzy składają oferty &quot;w ciemno&quot; (nie widząc ofert innych). Po zakończeniu okresu licytacji 
+                  ubezpieczalnia wybiera najwyższą ofertę. Oferent ma obowiązek kupić pojazd, jeśli jego oferta zostanie zaakceptowana.
+                </p>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Dlaczego to opłacalne dla Polski?</h2>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-gradient-to-br from-red-50 to-white border border-red-200 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-red-700 mb-3">🇩🇪 W Niemczech</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Robocizna: <strong>€50-100/h</strong></li>
+                  <li>• Części oryginalne: <strong>bardzo drogie</strong></li>
+                  <li>• Naprawa BMW: <strong>€18.000</strong></li>
+                  <li className="text-red-600 font-bold pt-2 border-t">→ Nieopłacalne</li>
+                </ul>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-white border border-green-200 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-green-700 mb-3">🇵🇱 W Polsce</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Robocizna: <strong>€20-40/h</strong></li>
+                  <li>• Części zamienniki: <strong>tańsze o 30-50%</strong></li>
+                  <li>• Naprawa BMW: <strong>€8.000-10.000</strong></li>
+                  <li className="text-green-600 font-bold pt-2 border-t">→ Bardzo opłacalne!</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Główne platformy Restwertbörsen</h2>
+
+            <div className="space-y-4 mb-8">
+              <div className="bg-white border rounded-lg p-5 flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiLock className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">car.casion</h3>
+                  <p className="text-gray-600">
+                    Największa platforma w Niemczech. Ubezpieczalnie: AXA, Allianz, HUK-COBURG, DEVK, VHV. 
+                    Około 2.000+ aut dziennie.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white border rounded-lg p-5 flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiGlobe className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">AUTO1.com (Wirkaufendeinauto.de)</h3>
+                  <p className="text-gray-600">
+                    Platforma B2B z aukcjami powypadkowymi. Dostęp dla dealerów z weryfikacją. 
+                    Około 1.500+ aut dziennie.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white border rounded-lg p-5 flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <FiGlobe className="w-6 h-6 text-primary-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">mobile.de Business</h3>
+                  <p className="text-gray-600">
+                    Sekcja B2B największego niemieckiego serwisu motoryzacyjnego. Dostęp tylko dla firm. 
+                    Około 1.000+ aut dziennie.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-yellow-50 border-l-4 border-yellow-600 p-6 rounded mt-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <FiAlertTriangle className="text-yellow-600" />
+                Ważne: Dostęp tylko dla licencjonowanych firm
+              </h3>
+              <p className="text-gray-700 mb-3">
+                Prywatne osoby <strong>nie mogą</strong> kupować bezpośrednio na Restwertbörsen. Wymagana jest:
+              </p>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Zarejestrowana firma motoryzacyjna</li>
+                <li>• Numer VAT UE</li>
+                <li>• Weryfikacja tożsamości i adresu</li>
+                <li>• W niektórych przypadkach: licencja dealerska</li>
+              </ul>
+              <p className="text-gray-700 mt-4">
+                <strong>Uszkodzone.de</strong> posiada wszystkie wymagane licencje i dostęp do głównych platform. 
+                Działamy jako pośrednik, kupując pojazdy w Twoim imieniu.
+              </p>
+            </div>
+
+            {/* CTA */}
+            <div className="bg-primary-600 text-white rounded-xl p-8 mt-12 text-center">
+              <h2 className="text-3xl font-bold mb-4">Chcesz kupić auto z Restwertbörse?</h2>
+              <p className="text-lg mb-6 opacity-90">
+                Mamy dostęp do 4.500+ aut dziennie ze wszystkich głównych niemieckich platform.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/aukcje"
+                  className="btn-primary bg-white text-primary-600 hover:bg-gray-100"
+                >
+                  Zobacz dostępne auta
+                </Link>
+                <Link
+                  href="/kalkulator"
+                  className="btn-primary bg-primary-700 hover:bg-primary-800"
+                >
+                  Kalkulator kosztów
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
