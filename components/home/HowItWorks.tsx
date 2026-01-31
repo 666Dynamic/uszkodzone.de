@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FiSearch, FiFileText, FiCheckCircle, FiTruck } from 'react-icons/fi'
+import { FiSearch, FiFileText, FiCheckCircle, FiTruck, FiArrowRight } from 'react-icons/fi'
+import Link from 'next/link'
 
 const steps = [
   {
@@ -88,6 +89,34 @@ export default function HowItWorks() {
             )
           })}
         </div>
+
+        {/* CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <p className="text-lg text-gray-600 mb-6">
+            Chcesz poznać szczegóły procesu i dowiedzieć się więcej?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/jak-to-dziala"
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              <span>Szczegółowy przewodnik</span>
+              <FiArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/aukcje"
+              className="btn-secondary inline-flex items-center gap-2"
+            >
+              <span>Zobacz dostępne auta</span>
+              <FiArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
