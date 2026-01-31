@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FiTruck, FiClock, FiShield, FiPackage } from 'react-icons/fi'
+import { FiTruck, FiClock, FiPackage } from 'react-icons/fi'
 
 const stats = [
   {
@@ -21,12 +21,6 @@ const stats = [
     value: 'Transport',
     label: 'do Polski',
     description: 'Odbiór samodzielny lub pomoc w transporcie',
-  },
-  {
-    icon: FiShield,
-    value: 'Prawne',
-    label: 'Wsparcie',
-    description: 'Oferta wiążąca po akceptacji',
   },
 ]
 
