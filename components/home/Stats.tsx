@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FiTruck, FiClock, FiPackage } from 'react-icons/fi'
+import { FiTruck, FiClock, FiShield, FiPackage } from 'react-icons/fi'
 
 const stats = [
   {
@@ -28,7 +28,7 @@ export default function Stats() {
   return (
     <section className="section-padding bg-white border-b">
       <div className="container-custom">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {stats.map((stat, index) => {
             const Icon = stat.icon
             return (
