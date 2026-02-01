@@ -55,11 +55,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/wiedza/ukryte-uszkodzenia</loc>
-    <lastmod>2026-01-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+    <!-- removed: /wiedza/ukryte-uszkodzenia -->
   <url>
     <loc>https://uszkodzone.de/blog</loc>
     <lastmod>2026-01-31</lastmod>

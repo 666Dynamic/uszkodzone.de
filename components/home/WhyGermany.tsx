@@ -6,39 +6,39 @@ import { FiCheck, FiX } from 'react-icons/fi'
 const comparisons = [
   {
     feature: 'Dostępność części',
-    germany: 'Łatwa, szybka dostawa',
-    switzerland: 'Droga, długi czas dostawy',
-    usa: 'Bardzo droga, długi import',
+    germany: 'Natychmiastowa (24-48h)',
+    switzerland: 'Trudna, długi czas',
+    usa: 'Bardzo trudna (tygodnie)',
   },
   {
-    feature: 'Koszty naprawy',
-    germany: 'Średnie (możliwe w PL)',
+    feature: 'Koszt części',
+    germany: 'Średnie',
     switzerland: 'Bardzo wysokie',
-    usa: 'Średnie, ale transport +',
+    usa: 'Średnie + cło + shipping',
   },
   {
-    feature: 'Odległość/Transport',
-    germany: '~600-1000 km',
+    feature: 'Transport auta',
+    germany: '~600-1000 km (laweta)',
     switzerland: '~1200-1500 km',
-    usa: '~7000+ km, kontener',
+    usa: '~7000+ km (kontener)',
   },
   {
-    feature: 'Zgodność homologacji',
-    germany: 'Pełna zgodność EU',
-    switzerland: 'Częściowa zgodność',
-    usa: 'Wymaga przeróbek',
+    feature: 'Homologacja EU',
+    germany: '✅ Pełna zgodność',
+    switzerland: '⚠️ Częściowa',
+    usa: '❌ Wymaga przeróbek',
   },
   {
-    feature: 'Dokumentacja',
-    germany: 'Prosta rejestracja',
-    switzerland: 'Bardziej złożona',
-    usa: 'Bardzo złożona, cło',
+    feature: 'Rejestracja',
+    germany: 'Prosta',
+    switzerland: 'Złożona (VAT)',
+    usa: 'Bardzo złożona (cło + VAT + EPA/DOT)',
   },
   {
-    feature: 'Rynek wtórny',
-    germany: 'Bardzo duży',
+    feature: 'Wybór aut',
+    germany: 'Ogromny rynek',
     switzerland: 'Średni',
-    usa: 'Średni, inny segment',
+    usa: 'Ogromny (inny segment)',
   },
 ]
 
@@ -149,10 +149,10 @@ export default function WhyGermany() {
           className="mt-12 bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl p-8 text-white"
         >
           <h3 className="text-2xl font-bold mb-4">Podsumowanie</h3>
-          <p className="text-primary-100 mb-6">
+          <p className="text-primary-100 mb-6 text-lg">
             Niemcy to najbardziej opłacalny wybór dla polskich kupujących ze względu na:
           </p>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-6">
             {[
               'Bliską odległość i niskie koszty transportu',
               'Pełną zgodność z normami EU',
@@ -162,8 +162,8 @@ export default function WhyGermany() {
               'Niższe koszty naprawy w Polsce',
             ].map((benefit, index) => (
               <div key={index} className="flex items-start gap-3">
-                <FiCheck className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span className="text-sm">{benefit}</span>
+                <FiCheck className="w-6 h-6 flex-shrink-0 mt-0.5 text-white" />
+                <span className="text-sm leading-relaxed">{benefit}</span>
               </div>
             ))}
           </div>

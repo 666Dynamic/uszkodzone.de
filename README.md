@@ -45,8 +45,7 @@ uszkodzone.de/
 │   ├── o-nas/                  # O firmie Miami Autocenter
 │   ├── wiedza/                 # Baza wiedzy
 │   │   ├── czym-jest-130-regelung/
-│   │   ├── oferta-wiazaca/
-│   │   └── ukryte-uszkodzenia/
+│   │   └── oferta-wiazaca/
 │   ├── blog/                   # Blog
 │   ├── kontakt/                # Formularz kontaktowy
 │   ├── polityka-prywatnosci/   # RODO

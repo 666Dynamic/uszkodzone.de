@@ -14,7 +14,6 @@ const navigation = [
     submenu: [
       { name: '130%-Regelung', href: '/wiedza/czym-jest-130-regelung' },
       { name: 'Oferta wiążąca', href: '/wiedza/oferta-wiazaca' },
-      { name: 'Ukryte uszkodzenia', href: '/wiedza/ukryte-uszkodzenia' },
     ]
   },
   { name: 'Koszty', href: '/koszty' },

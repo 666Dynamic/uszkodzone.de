@@ -24,14 +24,7 @@ const articles = [
     readTime: '5 min',
     category: 'Prawne',
   },
-  {
-    slug: 'ukryte-uszkodzenia',
-    title: 'Ukryte uszkodzenia - Jak ich unikać?',
-    description: 'Statystycznie 15-20% pojazdów ma uszkodzenia niewidoczne w raporcie. Dowiedz się jakie to mogą być problemy, jak ich unikać i jak się zabezpieczyć.',
-    icon: FiEye,
-    readTime: '8 min',
-    category: 'Praktyka',
-  },
+  // removed: 'ukryte-uszkodzenia' article (no longer published)
 ]
 
 export default function WiedzaPage() {

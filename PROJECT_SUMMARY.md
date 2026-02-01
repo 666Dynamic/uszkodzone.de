@@ -28,10 +28,9 @@ Complete, production-ready Next.js 14 platform for importing damaged vehicles fr
 - [x] /kalkulator (Calculator)
 - [x] /koszty (Costs & Pricing)
 - [x] /o-nas (About Us)
-- [x] /wiedza (Knowledge Base)
+  - [x] /wiedza (Knowledge Base)
   - [x] /wiedza/czym-jest-130-regelung
   - [x] /wiedza/oferta-wiazaca
-  - [x] /wiedza/ukryte-uszkodzenia
 - [x] /blog (Blog)
 - [x] /kontakt (Contact)
 - [x] /polityka-prywatnosci (Privacy)

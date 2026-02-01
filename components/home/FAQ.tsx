@@ -7,35 +7,33 @@ import { FiChevronDown } from 'react-icons/fi'
 const faqs = [
   {
     question: 'Czy mogę kupić auto jako osoba prywatna?',
-    answer: 'Tak! Chociaż niemieckie giełdy ubezpieczeniowe są zamknięte dla osób prywatnych, my mamy licencjonowany dostęp do tych platform. Działamy w Twoim imieniu – licytujemy za Ciebie na zamkniętych aukcjach, organizujemy transport i dokumentację. Ty po prostu wybierasz auto i decydujesz o maksymalnej cenie.',
+    answer: 'Tak! Chociaż niemieckie giełdy ubezpieczeniowe (Restwertbörsen) są zamknięte dla osób prywatnych, dzięki naszemu licencjonowanemu dostępowi możesz kupować pojazdy bezpośrednio z niemieckich ubezpieczalni. Ty wybierasz auto, analizujesz zdjęcia i raporty, składasz ofertę i decydujesz o maksymalnej cenie. Nasza prowizja: 2.500 PLN (stała kwota za dostęp i obsługę transakcji).',
   },
   {
     question: 'Co oznacza że oferta jest wiążąca przez 30 dni?',
-    answer: 'Twoja oferta jest WIĄŻĄCA przez 30 dni - oznacza to że jak wygrasz aukcję, MUSISZ kupić pojazd. Nie możesz się po prostu wycofać. W ciągu 30 dni ubezpieczalnia może zaakceptować Twoją ofertę (wtedy musisz zapłacić pełną kwotę w 7-14 dni) albo odrzucić jako za niską. Jeśli ubezpieczalnia zaakceptuje a Ty nie zapłacisz – tracisz wadium + dodatkowe kary umowne. Dlatego NIGDY nie licytuj auta którego nie chcesz kupić!',
+    answer: 'Twoja oferta jest WIĄŻĄCA przez 30 dni - oznacza to, że jak ubezpieczalnia ją zaakceptuje, MUSISZ kupić pojazd. Nie możesz się wycofać. W ciągu 30 dni ubezpieczalnia decyduje: akceptuje (wtedy masz 5 dni na odbiór pojazdu) albo odrzuca jako za niską. Płatność: gotówka u właściciela pojazdu przy odbiorze LUB przelew SWIFT przed odbiorem. Jeśli ubezpieczalnia zaakceptuje ofertę a Ty nie odbierzesz/nie zapłacisz w terminie 5 dni – tracisz wadium + dodatkowe kary umowne. Dlatego NIGDY nie składaj oferty na auto którego nie chcesz lub nie możesz kupić!',
   },
   {
-    question: 'Ile faktycznie kosztuje transport i pozostałe opłaty?',
-    answer: 'Transport lawetą z Niemiec: 1.300-2.500 zł. Ubezpieczenie transportu: 200-400 zł. Obsługa dokumentów i nasza prowizja: 300-800 zł. Razem transport: 1.800-3.700 zł. Dodatkowo po przyjeździe: przegląd techniczny (200-300 zł), rejestracja CEPiK (500-700 zł), polisa OC (800-1.500 zł rocznie). Łącznie opłaty dodatkowe to ok. 3.300-6.200 zł poza ceną aukcyjną pojazdu.',
+    question: 'Jakie są nasze opłaty?',
+    answer: 'Prowizja: 2.500 PLN (stała). Dodatkowo pobieramy opłaty aukcyjne (50-100 EUR) oraz opłatę za handling dokumentów.',
   },
   {
-    question: 'Jak działa wadium i czy je stracę?',
-    answer: 'Wadium (10-20% szacunkowej wartości pojazdu) to zabezpieczenie twojej wiążącej oferty. Wpłacasz je przed licytacją. Jeśli PRZEGRASZ aukcję – wadium wraca w całości w 1-3 dni. Jeśli WYGRASZ – wadium jest wliczane w cenę końcową pojazdu. Jeśli WYGRASZ ale nie zapłacisz reszty w terminie (7-14 dni) – wadium przepada + możliwe dodatkowe kary. Dlatego: licytuj TYLKO te auta, które na pewno chcesz i możesz kupić!',
+    question: 'Ile wynosi wadium i jak działa?',
+    answer:
+      'Standardowe wadium: 2 500 PLN. Dla większych ofert wymagamy wyższego zabezpieczenia: deklarowana maks. oferta > 10 000 EUR — wadium 4 000 PLN; deklarowana maks. oferta > 20 000 EUR — wadium 8 000 PLN.\n\nDlaczego pobieramy wadium: (1) odcina osoby, które tylko „oglądają”, (2) zabezpiecza nas przed opłatami aukcyjnymi i kosztami administracyjnymi w razie wycofania się po wygranej, (3) pomaga pokryć ewentualne koszty przy ponownej sprzedaży pojazdu.\n\nRozliczenie wadium po wygranej: wadium zostanie zaliczone na poczet naszej stałej prowizji (2 500 PLN). Jeżeli wpłacone wadium jest wyższe niż prowizja, nadwyżka zostanie zwrócona klientowi lub (za jego zgodą) może zostać zaliczona na poczet kosztów transportu/handlingu. Proszę nie mylić wysokości wadium z prowizją — wadium to zabezpieczenie, nie dodatkowa opłata dla firmy.\n\nZwroty: jeśli nie wygrasz żadnej aukcji — wadium zwracamy w całości (zwykle w ciągu 3–5 dni roboczych). Jeśli wygrasz i nie zapłacisz/nie odbierzesz pojazdu w wymaganym terminie — wadium przepada zgodnie z regulaminem.',
   },
-  {
-    question: 'Czy pojazd może mieć ukryte uszkodzenia?',
-    answer: 'Tak – około 15-20% pojazdów ma uszkodzenia niewidoczne w raporcie (np. problemy z silnikiem, skrzynią biegów, elektroniką). Raport ubezpieczalni zawiera tylko widoczne szkody z wyceny. UWAGA: Po wygraniu aukcji i zaakceptowaniu oferty przez ubezpieczalnię MUSISZ kupić pojazd - nie możesz się wycofać nawet jeśli znajdziesz ukryte uszkodzenia! Dlatego KRYTYCZNE: (1) Przed licytacją dokładnie analizuj WSZYSTKIE zdjęcia. (2) Licytuj TYLKO auta gdzie akceptujesz ryzyko. (3) Planuj zawsze bufor 20-30% na nieprzewidziane naprawy.',
-  },
+  
   {
     question: 'Ile czasu trwa cały proces?',
-    answer: 'Timeline: (1) Wybór auta i licytacja: 1-3 dni składania oferty. (2) Oczekiwanie na decyzję ubezpieczalni: 5-30 dni (Twoja oferta jest wiążąca przez ten czas). (3) Jeśli zaakceptują - płatność pełnej kwoty: 7-14 dni. (4) Transport do Polski: 5-10 dni. (5) Rejestracja w Polsce: 3-5 dni. RAZEM: od 3 tygodni (szybko) do 8 tygodni (normalnie). Średnio: 4-6 tygodni od złożenia oferty do rejestracji.',
+    answer: 'Szybka ścieżka: od złożenia oferty do rejestracji w Polsce w około 2–4 tygodnie. Największy czynnik wpływający na czas to decyzja ubezpieczalni.',
   },
   {
     question: 'Czy mogę sprawdzić auto przed zakupem?',
-    answer: 'PRZED licytacją: NIE - aukcje są online wyłącznie na podstawie zdjęć i raportów. Dostajesz 30-150 zdjęć + raport biegłego ubezpieczalni. PO WYGRANEJ: NIE ma już opcji sprawdzenia przed zakupem - oferta jest wiążąca. Teoretycznie możesz pojechać do Niemiec ale to nic nie zmieni - jeśli ubezpieczalnia zaakceptuje twoją ofertę w ciągu 30 dni, MUSISZ kupić. Dlatego KRYTYCZNE: dokładnie analizuj każde zdjęcie PRZED licytacją! Lepiej przegapić okazję niż kupić kota w worku.',
+    answer: 'NIE — przed złożeniem oferty możesz zobaczyć tylko zdjęcia i dokumentację (zwykle 10–20 zdjęć + raport ubezpieczalni). Lokalizacja i możliwość osobistego oglądu nie są udostępniane przed wygraną. Po zaakceptowaniu oferty nie ma możliwości wycofania się — oferta jest wiążąca. Dlatego KLUCZOWE: dokładnie analizuj zdjęcia, raport i kalkulację PRZED złożeniem oferty.',
   },
   {
     question: 'Co jeśli auto nie da się zarejestrować w Polsce?',
-    answer: 'Wszystkie pojazdy z niemieckich giełd spełniają normy EU i MOGĄ być zarejestrowane w Polsce. Potrzebujesz: (1) Fahrzeugbrief (dowód rejestracyjny) - otrzymujesz od nas. (2) COC (certyfikat zgodności EU) - jeśli brakuje, zamawiamy u producenta (400-1.200 zł). (3) Przegląd techniczny w Polsce. (4) Polisa OC. Pomagamy w całym procesie rejestracji. Problem może być tylko jeśli pojazd ma ZASTAWĘ (Pfandrecht) - ale to sprawdzamy PRZED licytacją.',
+    answer: 'Wszystkie pojazdy z niemieckich giełd spełniają normy EU i MOGĄ być zarejestrowane w Polsce. Potrzebujesz: (1) Fahrzeugbrief (dowód rejestracyjny) - otrzymujesz przy odbiorze. (2) COC (certyfikat zgodności EU) - jeśli brakuje, można zamówić u producenta (400-1.200 zł). (3) Przegląd techniczny w Polsce. (4) Polisa OC. W razie potrzeby pomagamy w procesie rejestracji. Problem może być tylko jeśli pojazd ma ZASTAWĘ (Pfandrecht) - ale weryfikujemy to PRZED złożeniem oferty.',
   },
 ]
 
