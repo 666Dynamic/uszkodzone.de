@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
-import { FiTruck, FiMail, FiPhone, FiMapPin, FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi'
+import { FiMail, FiPhone, FiMapPin, FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi'
+import AnimatedHammerLogo from './AnimatedHammerLogo'
 
 const navigation = {
   platform: [
@@ -26,9 +29,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-white mb-4">
-              <FiTruck className="w-8 h-8 text-primary-500" />
-              <span>Uszkodzone<span className="text-primary-500">.de</span></span>
+            <Link href="/" className="flex items-center mb-4">
+              <AnimatedHammerLogo textColor="text-white" accentColor="text-primary-500" />
             </Link>
             <p className="text-sm mb-6">
               Twój dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. Ponad 4500 aut powypadkowych dziennie.
