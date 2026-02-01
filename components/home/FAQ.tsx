@@ -32,8 +32,8 @@ const faqs = [
     answer: 'NIE — przed złożeniem oferty możesz zobaczyć tylko zdjęcia i dokumentację (zwykle 10–20 zdjęć + raport ubezpieczalni). Lokalizacja i możliwość osobistego oglądu nie są udostępniane przed wygraną. Po zaakceptowaniu oferty nie ma możliwości wycofania się — oferta jest wiążąca. Dlatego KLUCZOWE: dokładnie analizuj zdjęcia, raport i kalkulację PRZED złożeniem oferty.',
   },
   {
-    question: 'Co jeśli auto nie da się zarejestrować w Polsce?',
-    answer: 'Wszystkie pojazdy z niemieckich giełd spełniają normy EU i MOGĄ być zarejestrowane w Polsce. Potrzebujesz: (1) Fahrzeugbrief (dowód rejestracyjny) - otrzymujesz przy odbiorze. (2) COC (certyfikat zgodności EU) - jeśli brakuje, można zamówić u producenta (400-1.200 zł). (3) Przegląd techniczny w Polsce. (4) Polisa OC. W razie potrzeby pomagamy w procesie rejestracji. Problem może być tylko jeśli pojazd ma ZASTAWĘ (Pfandrecht) - ale weryfikujemy to PRZED złożeniem oferty.',
+    question: 'Jak zarejestrować uszkodzone auto z Niemiec?',
+    answer: 'Proces: (1) Otrzymujesz od nas komplet dokumentów (Zulassungsbescheinigung Teil I i II + umowa/faktura). (2) AKCYZA – masz 14 dni na złożenie deklaracji AKC-U/S i 30 dni na płatność. KLUCZOWE: wezwij rzeczoznawcę PRZED naprawą, by wycenił wartość w stanie uszkodzonym — to chroni Cię przed dopłatą podatku. (3) Naprawa pojazdu. (4) Badanie techniczne w Stacji Kontroli Pojazdów (SKP). (5) Rejestracja w Wydziale Komunikacji (dowód własności, potwierdzenie opłaty akcyzy, zaświadczenie z badania, opłaty ~160 zł). Całość po naprawie: zwykle 1-5 dni roboczych.',
   },
 ]
 

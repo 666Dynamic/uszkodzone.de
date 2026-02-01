@@ -24,6 +24,14 @@ const articles = [
     readTime: '5 min',
     category: 'Prawne',
   },
+  {
+    slug: 'rejestracja-uszkodzonego-auta',
+    title: 'Rejestracja uszkodzonego auta z Niemiec: Przewodnik',
+    description: 'Kompletny przewodnik krok po kroku: akcyza (14/30 dni), dokumenty, badanie techniczne, rola rzeczoznawcy PRZED naprawą. Wszystko, co musisz wiedzieć o rejestracji.',
+    icon: FiFileText,
+    readTime: '12 min',
+    category: 'Prawne',
+  },
   // removed: 'ukryte-uszkodzenia' article (no longer published)
 ]
 
