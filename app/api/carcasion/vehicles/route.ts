@@ -95,7 +95,7 @@ export async function GET(request: NextRequest) {
     }
 
     // 2. Jeśli są pojazdy, pobierz szczegóły
-    let vehicles = [];
+    let vehicles: any[] = [];
     let debugInfo = {
       testedXmlFormats: 4,
       lastResultCode: vehicleListResult?.GetVehicleListResult,
