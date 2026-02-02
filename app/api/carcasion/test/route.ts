@@ -117,9 +117,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       action,
-      result: result,
-      success: true,
-      action,
       result: result[0], // soap zwraca tablicę z wynikiem
       raw: result, // dodajemy też surową odpowiedź
       timestamp: new Date().toISOString()
