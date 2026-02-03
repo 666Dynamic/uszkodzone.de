@@ -18,7 +18,6 @@ const navigation = {
   legal: [
     { name: 'Polityka prywatności', href: '/polityka-prywatnosci' },
     { name: 'Regulamin', href: '/regulamin' },
-    { name: 'Kontakt', href: '/kontakt' },
   ],
 }
 

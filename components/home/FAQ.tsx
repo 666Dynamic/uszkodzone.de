@@ -7,33 +7,32 @@ import { FiChevronDown } from 'react-icons/fi'
 const faqs = [
   {
     question: 'Czy mogę kupić auto jako osoba prywatna?',
-    answer: 'Tak! Chociaż niemieckie giełdy ubezpieczeniowe (Restwertbörsen) są zamknięte dla osób prywatnych, dzięki naszemu licencjonowanemu dostępowi możesz kupować pojazdy bezpośrednio z niemieckich ubezpieczalni. Ty wybierasz auto, analizujesz zdjęcia i raporty, składasz ofertę i decydujesz o maksymalnej cenie. Nasza prowizja: 2.500 PLN (stała kwota za dostęp i obsługę transakcji).',
+    answer: 'Tak! Dzięki naszemu licencjonowanemu dostępowi możesz kupować pojazdy bezpośrednio z niemieckich ubezpieczalni:\n\n• Ty wybierasz auto i analizujesz zdjęcia oraz raporty\n• Składasz ofertę i decydujesz o maksymalnej cenie\n• Nasza stała prowizja: 2.500 PLN (dostęp + obsługa transakcji)',
   },
   {
     question: 'Co oznacza że oferta jest wiążąca przez 30 dni?',
-    answer: 'Twoja oferta jest WIĄŻĄCA przez 30 dni - oznacza to, że jak ubezpieczalnia ją zaakceptuje, MUSISZ kupić pojazd. Nie możesz się wycofać. W ciągu 30 dni ubezpieczalnia decyduje: akceptuje (wtedy masz 5 dni na odbiór pojazdu) albo odrzuca jako za niską. Płatność: gotówka u właściciela pojazdu przy odbiorze LUB przelew SWIFT przed odbiorem. Jeśli ubezpieczalnia zaakceptuje ofertę a Ty nie odbierzesz/nie zapłacisz w terminie 5 dni – tracisz wadium + dodatkowe kary umowne. Dlatego NIGDY nie składaj oferty na auto którego nie chcesz lub nie możesz kupić!',
+    answer: 'Twoja oferta jest WIĄŻĄCA — po akceptacji MUSISZ kupić pojazd:\n\n• Ubezpieczalnia ma 30 dni na decyzję (akceptuje lub odrzuca)\n• Po akceptacji: 5 dni na zapłatę i odbiór pojazdu\n• Płatność: gotówka przy odbiorze LUB przelew SWIFT\n• Brak realizacji = utrata wadium + kary umowne\n\n⚠️ NIGDY nie składaj oferty na auto którego nie chcesz kupić!',
   },
   {
-    question: 'Jakie są nasze opłaty?',
-    answer: 'Prowizja: 2.500 PLN (stała). Dodatkowo pobieramy opłaty aukcyjne (50-100 EUR) oraz opłatę za handling dokumentów.',
+    question: 'Jakie są opłaty?',
+    answer: 'Przejrzysta struktura kosztów:\n\n• Prowizja: 2.500 PLN (stała kwota)\n• Opłaty aukcyjne: 50-100 EUR\n• Handling dokumentów: według cennika',
   },
   {
     question: 'Ile wynosi wadium i jak działa?',
-    answer:
-      'Standardowe wadium: 2 500 PLN. Dla większych ofert wymagamy wyższego zabezpieczenia: deklarowana maks. oferta > 10 000 EUR — wadium 4 000 PLN; deklarowana maks. oferta > 20 000 EUR — wadium 8 000 PLN.\n\nDlaczego pobieramy wadium: (1) odcina osoby, które tylko „oglądają”, (2) zabezpiecza nas przed opłatami aukcyjnymi i kosztami administracyjnymi w razie wycofania się po wygranej, (3) pomaga pokryć ewentualne koszty przy ponownej sprzedaży pojazdu.\n\nRozliczenie wadium po wygranej: wadium zostanie zaliczone na poczet naszej stałej prowizji (2 500 PLN). Jeżeli wpłacone wadium jest wyższe niż prowizja, nadwyżka zostanie zwrócona klientowi lub (za jego zgodą) może zostać zaliczona na poczet kosztów transportu/handlingu. Proszę nie mylić wysokości wadium z prowizją — wadium to zabezpieczenie, nie dodatkowa opłata dla firmy.\n\nZwroty: jeśli nie wygrasz żadnej aukcji — wadium zwracamy w całości (zwykle w ciągu 3–5 dni roboczych). Jeśli wygrasz i nie zapłacisz/nie odbierzesz pojazdu w wymaganym terminie — wadium przepada zgodnie z regulaminem.',
+    answer: 'Wysokość wadium zależy od wartości oferty:\n\n• Standardowo: 2.500 PLN\n• Oferta > 10.000 EUR: wadium 4.000 PLN\n• Oferta > 20.000 EUR: wadium 8.000 PLN\n\n**Rozliczenie:**\n• Wygrana: wadium zaliczone na poczet prowizji\n• Przegrana: pełny zwrot w 3-5 dni\n• Brak realizacji: przepadek wadium',
   },
   
   {
     question: 'Ile czasu trwa cały proces?',
-    answer: 'Szybka ścieżka: od złożenia oferty do rejestracji w Polsce w około 2–4 tygodnie. Największy czynnik wpływający na czas to decyzja ubezpieczalni.',
+    answer: 'Od złożenia oferty do rejestracji w Polsce: **2-4 tygodnie**\n\nNajwiększym czynnikiem jest czas decyzji ubezpieczalni (do 30 dni).',
   },
   {
     question: 'Czy mogę sprawdzić auto przed zakupem?',
-    answer: 'NIE — przed złożeniem oferty możesz zobaczyć tylko zdjęcia i dokumentację (zwykle 10–20 zdjęć + raport ubezpieczalni). Lokalizacja i możliwość osobistego oglądu nie są udostępniane przed wygraną. Po zaakceptowaniu oferty nie ma możliwości wycofania się — oferta jest wiążąca. Dlatego KLUCZOWE: dokładnie analizuj zdjęcia, raport i kalkulację PRZED złożeniem oferty.',
+    answer: '**NIE** — przed złożeniem oferty dostępne są tylko:\n\n• 10-20 zdjęć wysokiej jakości\n• Raport ubezpieczalni ze szkodami\n• Kalkulacja kosztów naprawy\n\n⚠️ Brak możliwości oglądu = **dokładnie analizuj dokumentację!**',
   },
   {
     question: 'Jak zarejestrować uszkodzone auto z Niemiec?',
-    answer: 'Proces: (1) Otrzymujesz od nas komplet dokumentów (Zulassungsbescheinigung Teil I i II + umowa/faktura). (2) AKCYZA – masz 14 dni na złożenie deklaracji AKC-U/S i 30 dni na płatność. KLUCZOWE: wezwij rzeczoznawcę PRZED naprawą, by wycenił wartość w stanie uszkodzonym — to chroni Cię przed dopłatą podatku. (3) Naprawa pojazdu. (4) Badanie techniczne w Stacji Kontroli Pojazdów (SKP). (5) Rejestracja w Wydziale Komunikacji (dowód własności, potwierdzenie opłaty akcyzy, zaświadczenie z badania, opłaty ~160 zł). Całość po naprawie: zwykle 1-5 dni roboczych.',
+    answer: 'Krok po kroku:\n\n1. **Dokumenty** — otrzymujesz komplet od nas\n2. **Akcyza** — 14 dni na deklarację, wezwij rzeczoznawcę PRZED naprawą\n3. **Naprawa** pojazdu\n4. **Badanie techniczne** w SKP\n5. **Rejestracja** w Wydziale Komunikacji (~160 zł)\n\nCzas: 1-5 dni roboczych po naprawie',
   },
 ]
 
@@ -91,7 +90,7 @@ export default function FAQ() {
                     transition={{ duration: 0.2 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-5 text-gray-600 leading-relaxed">
+                    <div className="px-6 pb-5 text-gray-600 leading-relaxed whitespace-pre-line">
                       {faq.answer}
                     </div>
                   </motion.div>
@@ -100,24 +99,6 @@ export default function FAQ() {
             </motion.div>
           ))}
         </div>
-
-        {/* Contact CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-12 text-center"
-        >
-          <p className="text-gray-600 mb-4">
-            Nie znalazłeś odpowiedzi na swoje pytanie?
-          </p>
-          <a
-            href="/kontakt"
-            className="btn-secondary inline-flex items-center gap-2"
-          >
-            Skontaktuj się z nami
-          </a>
-        </motion.div>
       </div>
     </section>
   )

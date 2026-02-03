@@ -21,7 +21,7 @@ const featuredCars = [
     mileage: '191.265 KM',
     location: 'DE 31...',
     timeLeft: '23h 30m',
-    image: '/placeholder-car.jpg',
+    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="26" fill="%23374151"%3EFORD Focus%3C/text%3E%3C/svg%3E',
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const featuredCars = [
     mileage: '145.800 KM',
     location: 'DE 50...',
     timeLeft: '2d 14h',
-    image: '/placeholder-car.jpg',
+    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="26" fill="%23374151"%3EVW Golf%3C/text%3E%3C/svg%3E',
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const featuredCars = [
     mileage: '198.450 KM',
     location: 'DE 80...',
     timeLeft: '1d 8h',
-    image: '/placeholder-car.jpg',
+    image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23e5e7eb" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="26" fill="%23374151"%3EBMW 320d%3C/text%3E%3C/svg%3E',
   },
   {
     id: 4,

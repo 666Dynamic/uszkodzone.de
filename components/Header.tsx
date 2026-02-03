@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 import AnimatedHammerLogo from './AnimatedHammerLogo'
@@ -23,9 +24,15 @@ const navigation = [
 ]
 
 export default function Header() {
+  const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+
+  const isActive = (href: string) => {
+    if (href === '/') return pathname === '/'
+    return pathname.startsWith(href)
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +65,11 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
+                className={`font-medium transition-colors ${
+                  isActive(item.href)
+                    ? 'text-primary-600'
+                    : 'text-gray-700 hover:text-primary-600'
+                }`}
               >
                 {item.name}
                 {item.submenu && <span className="ml-1">▾</span>}
