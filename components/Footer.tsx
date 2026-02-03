@@ -35,17 +35,6 @@ export default function Footer() {
             <p className="text-sm mb-6">
               Twój dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. Ponad 4500 aut powypadkowych dziennie.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
-                <FiFacebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
-                <FiInstagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-primary-500 transition-colors">
-                <FiLinkedin className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Platform */}

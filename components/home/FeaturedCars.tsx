@@ -94,8 +94,8 @@ export default function FeaturedCars() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-          {featuredCars.map((car, index) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          {featuredCars.slice(0, 3).map((car, index) => (
             <motion.div
               key={car.id}
               initial={{ opacity: 0, y: 20 }}

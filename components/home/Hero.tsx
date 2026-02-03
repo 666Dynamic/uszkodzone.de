@@ -9,34 +9,6 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-gray-50 -z-10" />
-      
-      {/* Animated Shapes */}
-      <div className="absolute inset-0 overflow-hidden -z-10">
-        <motion.div
-          className="absolute top-20 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-30"
-          animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 50, 0],
-          }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-        <motion.div
-          className="absolute bottom-0 left-0 w-96 h-96 bg-primary-200 rounded-full blur-3xl opacity-20"
-          animate={{
-            scale: [1, 1.3, 1],
-            x: [0, -50, 0],
-          }}
-          transition={{
-            duration: 10,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
-      </div>
 
       <div className="container-custom py-16 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -51,10 +23,11 @@ export default function Hero() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
+              className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-6"
             >
-              <FiCheckCircle className="w-4 h-4" />
-              <span>Licencjonowany dostęp do niemieckich giełd ubezpieczeniowych</span>
+              <FiCheckCircle className="w-4 h-4 flex-shrink-0" />
+              <span className="hidden sm:inline">Licencjonowany dostęp do niemieckich giełd ubezpieczeniowych</span>
+              <span className="sm:hidden">Licencjonowany dostęp do giełd DE</span>
             </motion.div>
 
             {/* Headline */}
