@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Regulamin | Uszkodzone.de',
-  description: 'Regulamin korzystania z platformy Uszkodzone.de',
+  title: 'Regulamin | UszkodzoneZNiemiec.pl',
+  description: 'Regulamin korzystania z platformy UszkodzoneZNiemiec.pl',
 }
 
 export default function RegulaminPage() {
@@ -23,7 +23,7 @@ export default function RegulaminPage() {
               1. Postanowienia ogólne
             </h2>
             <p className="text-gray-600 mb-4">
-              Niniejszy regulamin określa zasady korzystania z platformy Uszkodzone.de 
+              Niniejszy regulamin określa zasady korzystania z platformy UszkodzoneZNiemiec.pl 
               prowadzonej przez Miami Autocenter GmbH.
             </p>
 
@@ -31,7 +31,7 @@ export default function RegulaminPage() {
               2. Definicje
             </h2>
             <ul className="list-disc list-inside text-gray-600 mb-4 space-y-2">
-              <li><strong>Platforma</strong> - serwis internetowy Uszkodzone.de</li>
+              <li><strong>Platforma</strong> - serwis internetowy UszkodzoneZNiemiec.pl</li>
               <li><strong>Operator</strong> - Miami Autocenter GmbH</li>
               <li><strong>Użytkownik</strong> - osoba korzystająca z platformy</li>
               <li><strong>Restwertbörsen</strong> - niemieckie giełdy ubezpieczeniowe</li>
@@ -78,7 +78,7 @@ export default function RegulaminPage() {
               7. Reklamacje
             </h2>
             <p className="text-gray-600 mb-4">
-              Reklamacje należy zgłaszać na adres: kontakt@uszkodzone.de w terminie 
+              Reklamacje należy zgłaszać na adres: kontakt@uszkodzonezniemiec.pl w terminie 
               14 dni od zaistnienia zdarzenia.
             </p>
 

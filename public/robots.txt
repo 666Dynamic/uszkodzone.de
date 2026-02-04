@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://uszkodzone.de/sitemap.xml
+Sitemap: https://uszkodzonezniemiec.pl/sitemap.xml

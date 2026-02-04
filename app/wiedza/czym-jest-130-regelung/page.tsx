@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiArrowLeft, FiAlertCircle, FiCheckCircle } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: '130%-Regelung - Niemiecka zasada szkody całkowitej | Uszkodzone.de',
+  title: '130%-Regelung - Niemiecka zasada szkody całkowitej | UszkodzoneZNiemiec.pl',
   description: 'Co to jest 130%-Regelung i dlaczego determinuje czy auto trafia na aukcję Restwertbörse? Kompleksowy przewodnik po niemieckim prawie ubezpieczeniowym.',
 }
 

@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://uszkodzone.de</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/aukcje</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/aukcje</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/jak-to-dziala</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/jak-to-dziala</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/kalkulator</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/kalkulator</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/wiedza</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/wiedza</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/wiedza/czym-jest-130-regelung</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/wiedza/czym-jest-130-regelung</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/wiedza/oferta-wiazaca</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/wiedza/oferta-wiazaca</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <!-- removed: /wiedza/ukryte-uszkodzenia -->
   <url>
-    <loc>https://uszkodzone.de/blog</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/blog</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/kontakt</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/kontakt</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/polityka-prywatnosci</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/polityka-prywatnosci</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://uszkodzone.de/regulamin</loc>
-    <lastmod>2026-01-31</lastmod>
+    <loc>https://uszkodzonezniemiec.pl/regulamin</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

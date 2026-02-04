@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiFileText, FiAlertCircle, FiCheckCircle } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Rejestracja uszkodzonego auta z Niemiec: Przewodnik | Uszkodzone.de',
+  title: 'Rejestracja uszkodzonego auta z Niemiec: Przewodnik | UszkodzoneZNiemiec.pl',
   description: 'Kompletny przewodnik krok po kroku: akcyza, dokumenty, badanie techniczne, rzeczoznawca. Wszystko, co musisz wiedzieć o rejestracji powypadkowego auta z Niemiec.',
 }
 
@@ -30,7 +30,7 @@ export default function RejestracjaUszkodzonegoAutaPage() {
             Rejestracja uszkodzonego auta z Niemiec: Przewodnik po procedurach i opłatach
           </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Zakup samochodu powypadkowego lub uszkodzonego z niemieckiej ubezpieczalni to jedna z najskuteczniejszych metod na nabycie pojazdu wyższej klasy w atrakcyjnej cenie. Dzięki aukcjom kopertowym na uszkodzone.de, proces zakupu jest transparentny, jednak dopełnienie formalności w Polsce wymaga trzymania się określonego harmonogramu.
+            Zakup samochodu powypadkowego lub uszkodzonego z niemieckiej ubezpieczalni to jedna z najskuteczniejszych metod na nabycie pojazdu wyższej klasy w atrakcyjnej cenie. Dzięki aukcjom kopertowym na UszkodzoneZNiemiec.pl, proces zakupu jest transparentny, jednak dopełnienie formalności w Polsce wymaga trzymania się określonego harmonogramu.
           </p>
         </div>
 
@@ -226,11 +226,11 @@ export default function RejestracjaUszkodzonegoAutaPage() {
             </div>
           </section>
 
-          {/* Why uszkodzone.de */}
+          {/* Why UszkodzoneZNiemiec.pl */}
           <section className="mb-12">
             <div className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-xl border border-primary-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Dlaczego licytacje kopertowe na uszkodzone.de to bezpieczny wybór?
+                Dlaczego licytacje kopertowe na UszkodzoneZNiemiec.pl to bezpieczny wybór?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Aukcje ubezpieczeniowe w Niemczech charakteryzują się rzetelnymi opisami. Kupując przez naszą platformę, masz pewność co do pochodzenia auta i stanu faktycznego uszkodzeń. To eliminuje ryzyko zakupu auta z wadami ukrytymi, o których nie wiedziałbyś podczas przygotowywania dokumentacji do akcyzy.

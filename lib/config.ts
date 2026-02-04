@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: 'Uszkodzone.de',
+  name: 'UszkodzoneZNiemiec.pl',
   description: 'Samochody powypadkowe z niemieckich giełd ubezpieczeniowych',
-  url: 'https://uszkodzone.de',
-  ogImage: 'https://uszkodzone.de/og-image.jpg',
+  url: 'https://uszkodzonezniemiec.pl',
+  ogImage: 'https://uszkodzonezniemiec.pl/og-image.jpg',
   company: {
     name: 'Miami Autocenter GmbH',
     country: 'Niemcy',
-    email: 'kontakt@uszkodzone.de',
+    email: 'kontakt@uszkodzonezniemiec.pl',
     phone: '+49 XXX XXX XXX',
   },
   social: {

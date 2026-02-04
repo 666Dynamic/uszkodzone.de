@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Kalkulator kosztów naprawy | Uszkodzone.de',
+  title: 'Kalkulator kosztów naprawy | Samochody powypadkowe | UszkodzoneZNiemiec.pl',
   description: 'Oblicz potencjalne koszty naprawy i zysk z zakupu powypadkowego auta z Niemiec.',
 }
 

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Polityka prywatności | Uszkodzone.de',
-  description: 'Polityka prywatności i ochrona danych osobowych w Uszkodzone.de',
+  title: 'Polityka prywatności | UszkodzoneZNiemiec.pl',
+  description: 'Polityka prywatności i ochrona danych osobowych w UszkodzoneZNiemiec.pl',
 }
 
 export default function PolitykaPrywatnosciPage() {
@@ -23,7 +23,7 @@ export default function PolitykaPrywatnosciPage() {
               1. Informacje ogólne
             </h2>
             <p className="text-gray-600 mb-4">
-              Miami Autocenter GmbH, operator platformy Uszkodzone.de, szanuje prywatność 
+              Miami Autocenter GmbH, operator platformy UszkodzoneZNiemiec.pl, szanuje prywatność 
               użytkowników i zobowiązuje się do ochrony danych osobowych zgodnie z RODO 
               i niemieckim prawem o ochronie danych.
             </p>
@@ -35,7 +35,7 @@ export default function PolitykaPrywatnosciPage() {
               Administratorem danych osobowych jest:<br />
               Miami Autocenter GmbH<br />
               Niemcy<br />
-              Email: kontakt@uszkodzone.de
+              Email: kontakt@uszkodzonezniemiec.pl
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
@@ -80,7 +80,7 @@ export default function PolitykaPrywatnosciPage() {
             </h2>
             <p className="text-gray-600">
               W sprawach dotyczących ochrony danych skontaktuj się z nami:<br />
-              Email: kontakt@uszkodzone.de
+              Email: kontakt@uszkodzonezniemiec.pl
             </p>
           </div>
         </div>

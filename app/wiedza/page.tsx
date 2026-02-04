@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiBook, FiAlertTriangle, FiFileText, FiEye } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Baza wiedzy - Wszystko o aukcjach powypadkowych | Uszkodzone.de',
+  title: 'Baza wiedzy - Wszystko o aukcjach powypadkowych z Niemiec | UszkodzoneZNiemiec.pl',
   description: 'Dowiedz się wszystkiego o zakupie powypadkowych aut z Niemiec, Restwertbörsen, rejestracji i naprawie.',
 }
 

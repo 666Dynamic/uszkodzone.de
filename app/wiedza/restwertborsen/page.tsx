@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiArrowLeft, FiInfo, FiLock, FiGlobe, FiAlertTriangle } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Czym są Restwertbörsen? | Niemieckie giełdy pozostałości | Uszkodzone.de',
+  title: 'Czym są Restwertbörsen? | Niemieckie giełdy pozostałości | UszkodzoneZNiemiec.pl',
   description: 'Wszystko o niemieckich giełdach pozostałości ubezpieczeniowych (Restwertbörsen). Jak działają, zasada 130%-Regelung, dostęp tylko dla licencjonowanych firm.',
   keywords: 'Restwertbörsen, giełdy pozostałości, Totalschaden, 130%-Regelung, niemieckie ubezpieczalnie, szkoda całkowita',
 }
@@ -196,7 +196,7 @@ export default function RestwertborsenPage() {
                 <li>• W niektórych przypadkach: licencja dealerska</li>
               </ul>
               <p className="text-gray-700 mt-4">
-                <strong>Uszkodzone.de</strong> posiada wszystkie wymagane licencje i dostęp do głównych platform. 
+                <strong>UszkodzoneZNiemiec.pl</strong> posiada wszystkie wymagane licencje i dostęp do głównych platform. 
                 Działamy jako pośrednik, kupując pojazdy w Twoim imieniu.
               </p>
             </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Aukcje samochodów powypadkowych z Niemiec | Uszkodzone.de',
+  title: 'Aukcje samochodów powypadkowych z Niemiec | Restwertbörsen | UszkodzoneZNiemiec.pl',
   description: 'Przeglądaj ponad 4500 samochodów powypadkowych dziennie z niemieckich giełd ubezpieczeniowych. Ford, VW, BMW, Audi i inne marki w atrakcyjnych cenach.',
 }
 

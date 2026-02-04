@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiArrowLeft, FiAlertTriangle, FiCheckCircle, FiX } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Oferta wiążąca - Co to znaczy i jakie są konsekwencje? | Uszkodzone.de',
+  title: 'Oferta wiążąca - Co to znaczy i jakie są konsekwencje? | UszkodzoneZNiemiec.pl',
   description: 'Oferta na niemieckich aukcjach Restwertbörse jest wiążąca przez 30 dni. Dowiedz się co to oznacza i dlaczego NIE możesz się wycofać bez konsekwencji.',
 }
 

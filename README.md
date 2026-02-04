@@ -1,10 +1,10 @@
-# Uszkodzone.de 🚗
+# UszkodzoneZNiemiec.pl 🚗
 
 Platforma dostępu do zamkniętych niemieckich giełd ubezpieczeniowych (Restwertbörsen) dla polskich klientów. Kup powypadkowe auto bezpośrednio z ubezpieczalni w Niemczech.
 
 ## 🎯 O projekcie
 
-Uszkodzone.de to profesjonalna platforma umożliwiająca zakup powypadkowych samochodów z niemieckich giełd ubezpieczeniowych (Restwertbörsen) takich jak:
+UszkodzoneZNiemiec.pl to profesjonalna platforma umożliwiająca zakup powypadkowych samochodów z niemieckich giełd ubezpieczeniowych (Restwertbörsen) takich jak:
 - Car.casion
 - Autoonline
 - Car.tv
@@ -32,7 +32,7 @@ Uszkodzone.de to profesjonalna platforma umożliwiająca zakup powypadkowych sam
 ## 📁 Struktura projektu
 
 ```
-uszkodzone.de/
+uszkodzonezniemiec.pl/
 ├── app/
 │   ├── layout.tsx              # Root layout z SEO
 │   ├── page.tsx                # Strona główna
@@ -230,15 +230,15 @@ docker build -t uszkodzone-de .
 
 # Run
 docker run -p 3000:3000 \
-  -e NEXT_PUBLIC_API_URL=https://uszkodzone.de \
+  -e NEXT_PUBLIC_API_URL=https://uszkodzonezniemiec.pl \
   -e CAR_CASION_API_KEY=xxx \
-  uszkodzone-de
+  uszkodzonezniemiec-pl
 ```
 
 ### Environment variables (konfiguracja w Vercel/Railway):
 ```
 NODE_ENV=production
-NEXT_PUBLIC_API_URL=https://uszkodzone.de
+NEXT_PUBLIC_API_URL=https://uszkodzonezniemiec.pl
 CAR_CASION_API_KEY=your_key_here
 CAR_CASION_API_URL=https://api.car.casion/v1
 CAR_CASION_WEBHOOK_SECRET=your_secret_here
@@ -288,7 +288,7 @@ CAR_CASION_WEBHOOK_SECRET=your_secret_here
 
 ## 📞 Support & Contact
 
-- **Email**: kontakt@uszkodzone.de
+- **Email**: kontakt@uszkodzonezniemiec.pl
 - **GitHub**: https://github.com/666Dynamic/uszkodzone.de
 - **Docs**: /wiedza /jak-to-dziala
 
@@ -316,8 +316,8 @@ npm start
 ## 📧 Kontakt
 
 **Miami Autocenter GmbH**
-- Email: kontakt@uszkodzone.de
-- Website: https://uszkodzone.de
+- Email: kontakt@uszkodzonezniemiec.pl
+- Website: https://uszkodzonezniemiec.pl
 - Tel: +49 XXX XXX XXX
 
 ## 📄 Licencja

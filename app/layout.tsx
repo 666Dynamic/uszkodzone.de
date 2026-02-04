@@ -11,30 +11,30 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Samochody powypadkowe z Niemiec | Aukcje online | Uszkodzone.de',
-  description: 'Kupuj auta powypadkowe z aukcji w Niemczech - od €2000. Licytacja kopertowa, transport, dokumenty. 8000+ aut dziennie.',
-  keywords: 'samochody powypadkowe, import aut z Niemiec, Restwertbörsen, aukcje samochodów, car.casion, uszkodzone auto, 130%-Regelung',
+  title: 'Samochody powypadkowe z Niemiec | Aukcje auta uszkodzone | UszkodzoneZNiemiec.pl',
+  description: 'Kupuj auta powypadkowe z aukcji w Niemczech - od €2000. Licytacja kopertowa, transport, dokumenty. Restwertbörsen - 4500+ aut dziennie z niemieckich ubezpieczalni.',
+  keywords: 'samochody powypadkowe z niemiec, auta powypadkowe niemcy, import aut z niemiec, restwertbörsen, aukcje samochodów niemcy, car.casion, uszkodzone auto z niemiec, 130%-regelung, giełdy ubezpieczeniowe niemcy, auta uszkodzone niemcy, samochody z niemiec tanie',
   authors: [{ name: 'Miami Autocenter GmbH' }],
   openGraph: {
     type: 'website',
     locale: 'pl_PL',
-    url: 'https://uszkodzone.de',
-    siteName: 'Uszkodzone.de',
-    title: 'Uszkodzone.de - Samochody powypadkowe z Niemiec',
-    description: 'Dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. Ponad 4500 aut dziennie.',
+    url: 'https://uszkodzonezniemiec.pl',
+    siteName: 'UszkodzoneZNiemiec.pl',
+    title: 'Samochody powypadkowe z Niemiec - Aukcje Restwertbörsen',
+    description: 'Dostęp do zamkniętych niemieckich giełd ubezpieczeniowych Restwertbörsen. Ponad 4500 aut powypadkowych dziennie. Licytacje kopertowe, bezpieczny zakup, transport i rejestracja w Polsce.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Uszkodzone.de',
+        alt: 'UszkodzoneZNiemiec.pl - Samochody powypadkowe z Niemiec',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Uszkodzone.de - Samochody powypadkowe z Niemiec',
-    description: 'Dostęp do zamkniętych niemieckich giełd ubezpieczeniowych',
+    title: 'Samochody powypadkowe z Niemiec | UszkodzoneZNiemiec.pl',
+    description: 'Dostęp do zamkniętych niemieckich giełd ubezpieczeniowych Restwertbörsen. 4500+ aut dziennie.',
   },
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code',
   },
   alternates: {
-    canonical: 'https://uszkodzone.de',
+    canonical: 'https://uszkodzonezniemiec.pl',
   },
 }
 

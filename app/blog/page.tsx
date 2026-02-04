@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog - Aktualności i porady | Uszkodzone.de',
+  title: 'Blog - Aktualności i porady | Auta powypadkowe z Niemiec | UszkodzoneZNiemiec.pl',
   description: 'Najnowsze informacje, porady i artykuły o zakupie powypadkowych samochodów z Niemiec.',
 }
 

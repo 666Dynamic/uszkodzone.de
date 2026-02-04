@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { FiSearch, FiFileText, FiCheckCircle, FiTruck, FiCreditCard, FiShield } from 'react-icons/fi'
 
 export const metadata: Metadata = {
-  title: 'Jak to działa - Kup auto powypadkowe z Niemiec | Uszkodzone.de',
+  title: 'Jak to działa - Kup auto powypadkowe z Niemiec | UszkodzoneZNiemiec.pl',
   description: 'Poznaj prosty proces zakupu powypadkowych aut z niemieckich giełd ubezpieczeniowych. Od licytacji do transportu pod dom w 4 prostych krokach.',
 }
 

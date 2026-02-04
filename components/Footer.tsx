@@ -74,8 +74,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FiMail className="w-5 h-5 flex-shrink-0 text-primary-500" />
-                <a href="mailto:kontakt@uszkodzone.de" className="hover:text-primary-500 transition-colors">
-                  kontakt@uszkodzone.de
+                <a href="mailto:kontakt@uszkodzonezniemiec.pl" className="hover:text-primary-500 transition-colors">
+                  kontakt@uszkodzonezniemiec.pl
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Uszkodzone.de - Miami Autocenter GmbH. Wszelkie prawa zastrzeżone.
+            © {new Date().getFullYear()} UszkodzoneZNiemiec.pl - Miami Autocenter GmbH. Wszelkie prawa zastrzeżone.
           </p>
           <div className="flex gap-6">
             {navigation.legal.map((item) => (
