@@ -1,24 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <defs>
-    <clipPath id="top">
-      <rect x="0" y="0" width="32" height="10.67"/>
-    </clipPath>
-    <clipPath id="middle">
-      <rect x="0" y="10.67" width="32" height="10.67"/>
-    </clipPath>
-    <clipPath id="bottom">
-      <rect x="0" y="21.33" width="32" height="10.67"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tło -->
+  <rect width="64" height="64" fill="#1e293b"/>
   
-  <!-- Młotek w kolorach flagi niemieckiej -->
-  <g clip-path="url(#top)">
-    <path fill="#000000" d="M8 4L4 8L12 16L16 12L8 4ZM20 8L16 12L18 14L14 18L16 20L20 16L22 18L26 14L20 8Z"/>
-  </g>
-  <g clip-path="url(#middle)">
-    <path fill="#DC2626" d="M8 4L4 8L12 16L16 12L8 4ZM20 8L16 12L18 14L14 18L16 20L20 16L22 18L26 14L20 8Z"/>
-  </g>
-  <g clip-path="url(#bottom)">
-    <path fill="#FBBF24" d="M8 4L4 8L12 16L16 12L8 4ZM20 8L16 12L18 14L14 18L16 20L20 16L22 18L26 14L20 8Z"/>
-  </g>
+  <!-- Młotek - część czarna (góra) -->
+  <rect x="12" y="10" width="40" height="13.33" fill="#000000" rx="2"/>
+  
+  <!-- Młotek - część czerwona (środek) -->
+  <rect x="12" y="23.33" width="40" height="13.33" fill="#DC2626" rx="2"/>
+  
+  <!-- Młotek - część żółta (dół) -->
+  <rect x="12" y="36.67" width="40" height="13.33" fill="#FBBF24" rx="2"/>
+  
+  <!-- Rączka młotka -->
+  <rect x="28" y="50" width="8" height="8" fill="#9CA3AF" rx="1"/>
 </svg>
