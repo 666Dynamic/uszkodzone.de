@@ -25,11 +25,11 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container-custom py-12 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center mb-4 max-w-[280px]">
-              <AnimatedHammerLogo textColor="text-white" accentColor="text-primary-500" fontSize="text-base" />
+            <Link href="/" className="flex items-center mb-4 max-w-[240px]">
+              <AnimatedHammerLogo textColor="text-white" accentColor="text-primary-500" fontSize="text-sm" />
             </Link>
             <p className="text-sm mb-6">
               Twój dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. Ponad 4500 aut powypadkowych dziennie.
