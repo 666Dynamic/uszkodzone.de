@@ -50,12 +50,12 @@ export default function Header() {
     >
       <nav className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center flex-shrink-0">
           <AnimatedHammerLogo />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6 lg:gap-8">
           {navigation.map((item) => (
             <div 
               key={item.name} 
