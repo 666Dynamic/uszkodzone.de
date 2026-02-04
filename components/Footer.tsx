@@ -28,8 +28,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center mb-4">
-              <AnimatedHammerLogo textColor="text-white" accentColor="text-primary-500" />
+            <Link href="/" className="flex items-center mb-4 max-w-[280px]">
+              <AnimatedHammerLogo textColor="text-white" accentColor="text-primary-500" fontSize="text-base" />
             </Link>
             <p className="text-sm mb-6">
               Twój dostęp do zamkniętych niemieckich giełd ubezpieczeniowych. Ponad 4500 aut powypadkowych dziennie.

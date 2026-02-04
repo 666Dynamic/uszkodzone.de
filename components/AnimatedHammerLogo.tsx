@@ -3,9 +3,10 @@ import { MdGavel } from 'react-icons/md'
 interface AnimatedHammerLogoProps {
   textColor?: string
   accentColor?: string
+  fontSize?: string
 }
 
-export default function AnimatedHammerLogo({ textColor = 'text-primary-600', accentColor = 'text-gray-900' }: AnimatedHammerLogoProps) {
+export default function AnimatedHammerLogo({ textColor = 'text-primary-600', accentColor = 'text-gray-900', fontSize = 'text-lg md:text-xl lg:text-2xl' }: AnimatedHammerLogoProps) {
   return (
     <div className="flex items-center gap-3">
       {/* Hammer with German Flag Colors */}
@@ -21,7 +22,7 @@ export default function AnimatedHammerLogo({ textColor = 'text-primary-600', acc
       </div>
 
       {/* Text */}
-      <span className="text-lg md:text-xl lg:text-2xl font-bold flex items-center whitespace-nowrap" style={{ lineHeight: '32px' }}>
+      <span className={`${fontSize} font-bold flex items-center whitespace-nowrap`} style={{ lineHeight: '32px' }}>
         <span className={textColor}>uszkodzone</span>
         <span className={accentColor}>zniemiec.pl</span>
       </span>
