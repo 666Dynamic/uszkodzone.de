@@ -23,7 +23,7 @@ export default function AnimatedHammerLogo({ textColor = 'text-primary-600', acc
       {/* Text */}
       <span className="text-2xl font-bold flex items-center" style={{ lineHeight: '32px' }}>
         <span className={textColor}>uszkodzone</span>
-        <span className={accentColor}>.de</span>
+        <span className={accentColor}>zniemiec.pl</span>
       </span>
     </div>
   )

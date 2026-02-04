@@ -226,7 +226,7 @@ fly deploy
 ### Docker (własny serwer):
 ```bash
 # Build
-docker build -t uszkodzone-de .
+docker build -t uszkodzonezniemiec-pl .
 
 # Run
 docker run -p 3000:3000 \

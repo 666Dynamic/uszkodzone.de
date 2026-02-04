@@ -10,9 +10,9 @@ export const siteConfig = {
     phone: '+49 XXX XXX XXX',
   },
   social: {
-    facebook: 'https://facebook.com/uszkodzone',
-    instagram: 'https://instagram.com/uszkodzone',
-    linkedin: 'https://linkedin.com/company/uszkodzone',
+    facebook: 'https://facebook.com/uszkodzonezniemiec',
+    instagram: 'https://instagram.com/uszkodzonezniemiec',
+    linkedin: 'https://linkedin.com/company/uszkodzonezniemiec',
   },
   stats: {
     carsPerDay: '4500+',
