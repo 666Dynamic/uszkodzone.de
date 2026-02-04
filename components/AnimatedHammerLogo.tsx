@@ -6,7 +6,7 @@ interface AnimatedHammerLogoProps {
   fontSize?: string
 }
 
-export default function AnimatedHammerLogo({ textColor = 'text-primary-600', accentColor = 'text-gray-900', fontSize = 'text-lg md:text-xl lg:text-2xl' }: AnimatedHammerLogoProps) {
+export default function AnimatedHammerLogo({ textColor = 'text-gray-900', accentColor = 'text-primary-600', fontSize = 'text-lg md:text-xl lg:text-2xl' }: AnimatedHammerLogoProps) {
   return (
     <div className="flex items-center gap-3">
       {/* Hammer with German Flag Colors */}
@@ -23,8 +23,8 @@ export default function AnimatedHammerLogo({ textColor = 'text-primary-600', acc
 
       {/* Text */}
       <span className={`${fontSize} font-bold flex items-center whitespace-nowrap`} style={{ lineHeight: '32px' }}>
-        <span className={textColor}>uszkodzone</span>
-        <span className={accentColor}>zniemiec.pl</span>
+        <span className={accentColor}>uszkodzone</span>
+        <span className={textColor}>zniemiec.pl</span>
       </span>
     </div>
   )
