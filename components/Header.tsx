@@ -55,7 +55,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-8">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {navigation.map((item) => (
             <div 
               key={item.name} 
@@ -65,7 +65,7 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className={`font-medium transition-colors ${
+                className={`text-sm lg:text-base font-medium transition-colors ${
                   isActive(item.href)
                     ? 'text-primary-600'
                     : 'text-gray-700 hover:text-primary-600'
@@ -90,7 +90,7 @@ export default function Header() {
               )}
             </div>
           ))}
-          <Link href="/aukcje" className="btn-primary">
+          <Link href="/aukcje" className="hidden lg:inline-flex btn-primary">
             Zobacz aukcje
           </Link>
         </div>
