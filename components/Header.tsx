@@ -55,7 +55,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           {navigation.map((item) => (
             <div 
               key={item.name} 
@@ -98,7 +98,7 @@ export default function Header() {
         {/* Mobile menu button */}
         <button
           type="button"
-          className="lg:hidden p-2 text-gray-700"
+          className="md:hidden p-2 text-gray-700"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <FiX className="w-6 h-6" /> : <FiMenu className="w-6 h-6" />}
@@ -107,7 +107,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t mt-4">
+        <div className="md:hidden bg-white border-t mt-4">
           <div className="container-custom py-4 flex flex-col gap-2">
             {navigation.map((item) => (
               <div key={item.name}>
