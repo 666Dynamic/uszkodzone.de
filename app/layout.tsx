@@ -11,6 +11,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://uszkodzonezniemiec.pl'),
   title: 'Samochody powypadkowe z Niemiec | Aukcje auta uszkodzone | UszkodzoneZNiemiec.pl',
   description: 'Kupuj auta powypadkowe z aukcji w Niemczech - od €2000. Licytacja kopertowa, transport, dokumenty. Restwertbörsen - 4500+ aut dziennie z niemieckich ubezpieczalni.',
   keywords: 'samochody powypadkowe z niemiec, auta powypadkowe niemcy, import aut z niemiec, restwertbörsen, aukcje samochodów niemcy, car.casion, uszkodzone auto z niemiec, 130%-regelung, giełdy ubezpieczeniowe niemcy, auta uszkodzone niemcy, samochody z niemiec tanie',
