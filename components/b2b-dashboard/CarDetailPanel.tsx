@@ -85,6 +85,7 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                         <div className="flex flex-col gap-2">
                             {/* Main Image Container */}
                             <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] rounded-lg overflow-hidden border border-slate-200 bg-slate-100 group">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={car.imageUrls[activeImageIdx]}
                                     alt="Pojazd"
@@ -138,6 +139,7 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                           ${activeImageIdx === idx ? 'border-indigo-600 opacity-100' : 'border-transparent opacity-60 hover:opacity-100 ring-1 ring-inset ring-slate-200'}
                         `}
                                     >
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img src={url} alt={`thumb ${idx}`} className="w-full h-full object-cover" />
                                     </button>
                                 ))}
@@ -231,7 +233,7 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                                     </div>
                                     <div className="text-[9px] text-slate-500 mt-2 flex items-center leading-tight">
                                         <AlertCircle className="w-3 h-3 mr-1 shrink-0 text-amber-500" />
-                                        Platforma działa na zasadzie aukcji w ciemno ("Restwertbörse"). Złożona oferta jest wiążąca bez prawa do wycofania.
+                                        Platforma działa na zasadzie aukcji w ciemno (&quot;Restwertbörse&quot;). Złożona oferta jest wiążąca bez prawa do wycofania.
                                     </div>
                                 </div>
                             )}
@@ -403,6 +405,7 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                     </div>
 
                     <div className="relative w-full max-w-6xl max-h-[85vh] flex items-center justify-center p-4">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             src={car.imageUrls[activeImageIdx]}
                             alt={`Fullscreen image ${activeImageIdx + 1}`}
