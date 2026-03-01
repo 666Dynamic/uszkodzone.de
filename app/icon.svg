@@ -1,16 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Tło -->
-  <rect width="64" height="64" fill="#1e293b"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="top">
+      <rect x="0" y="0" width="24" height="8" />
+    </clipPath>
+    <clipPath id="middle">
+      <rect x="0" y="8" width="24" height="8" />
+    </clipPath>
+    <clipPath id="bottom">
+      <rect x="0" y="16" width="24" height="8" />
+    </clipPath>
+    <g id="hammer">
+      <path d="m5.25 8.069 2.83-2.827 14.134 14.15-2.83 2.827zM9.486 3.827 12.314.998l5.657 5.656-2.828 2.83zM.999 12.315l2.828-2.829 5.657 5.657-2.828 2.828zM1 21h12v2H1z" />
+    </g>
+  </defs>
+
+  <!-- Białe tło z zaokrąglonymi rogami -->
+  <rect width="24" height="24" rx="5.5" ry="5.5" fill="#ffffff" />
   
-  <!-- Młotek - część czarna (góra) -->
-  <rect x="12" y="10" width="40" height="13.33" fill="#000000" rx="2"/>
-  
-  <!-- Młotek - część czerwona (środek) -->
-  <rect x="12" y="23.33" width="40" height="13.33" fill="#DC2626" rx="2"/>
-  
-  <!-- Młotek - część żółta (dół) -->
-  <rect x="12" y="36.67" width="40" height="13.33" fill="#FBBF24" rx="2"/>
-  
-  <!-- Rączka młotka -->
-  <rect x="28" y="50" width="8" height="8" fill="#9CA3AF" rx="1"/>
+  <!-- Młotek wektorowy pomniejszony i wyśrodkowany -->
+  <g transform="translate(3.6 3.6) scale(0.7)">
+    <use href="#hammer" fill="#111827" clip-path="url(#top)" />
+    <use href="#hammer" fill="#DC2626" clip-path="url(#middle)" />
+    <use href="#hammer" fill="#FBBF24" clip-path="url(#bottom)" />
+  </g>
 </svg>

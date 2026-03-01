@@ -17,7 +17,7 @@ export default function KontaktPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('sending')
-    
+
     try {
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -57,7 +57,7 @@ export default function KontaktPage() {
             <span className="text-primary-600">Kontakt</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Masz pytania? Skontaktuj się z nami. Jesteśmy tu, aby pomóc Ci 
+            Masz pytania? Skontaktuj się z nami. Jesteśmy tu, aby pomóc Ci
             w zakupie auta z niemieckich giełd ubezpieczeniowych.
           </p>
         </div>
@@ -108,12 +108,11 @@ export default function KontaktPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Telefon</h3>
-                      <a
-                        href="tel:+49"
-                        className="text-primary-600 hover:text-primary-700"
-                      >
-                        +49 XXX XXX XXX
-                      </a>
+                      <div className="flex flex-col gap-1">
+                        <a href="tel:+4915679264391" className="text-primary-600 hover:text-primary-700">+49 156 79264391 (DE)</a>
+                        <a href="tel:+48780010848" className="text-primary-600 hover:text-primary-700">+48 780 010 848 (PL)</a>
+                        <span className="text-xs text-gray-500 mt-1 uppercase font-semibold">Szybki kontakt 7:00–22:00</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -122,9 +121,8 @@ export default function KontaktPage() {
               <div className="bg-white rounded-xl p-6 border-l-4 border-primary-600">
                 <h3 className="font-bold text-gray-900 mb-2">Godziny pracy</h3>
                 <div className="text-sm text-gray-600 space-y-1">
-                  <p>Poniedziałek - Piątek: 9:00 - 18:00</p>
-                  <p>Sobota: 10:00 - 14:00</p>
-                  <p>Niedziela: Zamknięte</p>
+                  <p>Codziennie: 7:00 - 22:00</p>
+                  <p className="pt-2 text-xs italic text-gray-500">Poza tymi godzinami zostaw wiadomość, odpisujemy w 24H.</p>
                 </div>
               </div>
             </div>
@@ -135,7 +133,7 @@ export default function KontaktPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">
                   Wyślij wiadomość
                 </h2>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>

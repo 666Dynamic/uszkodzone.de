@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'UszkodzoneZNiemiec.pl <kontakt@uszkodzonezniemiec.pl>',
+      from: 'Acme <onboarding@resend.dev>',
       to: ['kontakt@uszkodzonezniemiec.pl'],
       replyTo: email,
       subject: `[Kontakt] ${subject}`,

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { FiMail, FiPhone, FiMapPin, FiFacebook, FiInstagram, FiLinkedin } from 'react-icons/fi'
 import AnimatedHammerLogo from './AnimatedHammerLogo'
 
@@ -22,6 +23,11 @@ const navigation = {
 }
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === '/aukcje' || pathname?.startsWith('/aukcje/')) {
+    return null;
+  }
+
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container-custom py-12 lg:py-16">

@@ -10,8 +10,8 @@ const navigation = [
   { name: 'Aukcje', href: '/aukcje' },
   { name: 'Jak to działa', href: '/jak-to-dziala' },
   { name: 'Kalkulator', href: '/kalkulator' },
-  { 
-    name: 'Wiedza', 
+  {
+    name: 'Wiedza',
     href: '/wiedza',
     submenu: [
       { name: '130%-Regelung', href: '/wiedza/czym-jest-130-regelung' },
@@ -43,10 +43,9 @@ export default function Header() {
   }, [])
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-2' : 'bg-white/95 backdrop-blur-sm py-4'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-white/95 backdrop-blur-sm py-4'
+        }`}
     >
       <nav className="container-custom flex items-center justify-between">
         {/* Logo */}
@@ -57,35 +56,35 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
           {navigation.map((item) => (
-            <div 
-              key={item.name} 
+            <div
+              key={item.name}
               className="relative"
               onMouseEnter={() => item.submenu && setOpenDropdown(item.name)}
               onMouseLeave={() => setOpenDropdown(null)}
             >
               <Link
                 href={item.href}
-                className={`text-sm lg:text-base font-medium transition-colors ${
-                  isActive(item.href)
-                    ? 'text-primary-600'
-                    : 'text-gray-700 hover:text-primary-600'
-                }`}
+                className={`text-sm lg:text-base font-medium transition-colors ${isActive(item.href)
+                  ? 'text-primary-600'
+                  : 'text-gray-700 hover:text-primary-600'
+                  }`}
               >
                 {item.name}
                 {item.submenu && <span className="ml-1">▾</span>}
               </Link>
-              
               {item.submenu && openDropdown === item.name && (
-                <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 min-w-[220px] z-50">
-                  {item.submenu.map((subitem) => (
-                    <Link
-                      key={subitem.name}
-                      href={subitem.href}
-                      className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
-                    >
-                      {subitem.name}
-                    </Link>
-                  ))}
+                <div className="absolute top-full left-0 pt-2 z-50">
+                  <div className="bg-white shadow-lg rounded-lg py-2 min-w-[220px]">
+                    {item.submenu.map((subitem) => (
+                      <Link
+                        key={subitem.name}
+                        href={subitem.href}
+                        className="block px-4 py-2 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                      >
+                        {subitem.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -119,7 +118,7 @@ export default function Header() {
                   {item.name}
                   {item.submenu && <span className="ml-1">▾</span>}
                 </Link>
-                
+
                 {item.submenu && (
                   <div className="pl-4 flex flex-col gap-1 mt-1">
                     {item.submenu.map((subitem) => (

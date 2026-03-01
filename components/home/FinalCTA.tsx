@@ -38,7 +38,7 @@ export default function FinalCTA() {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-primary-100 mb-10 leading-relaxed">
-            Dołącz do setek zadowolonych klientów, którzy już kupili swoje wymarzone 
+            Dołącz do setek zadowolonych klientów, którzy już kupili swoje wymarzone
             auto w świetnej cenie dzięki dostępowi do zamkniętych giełd ubezpieczeniowych.
           </p>
 
@@ -104,7 +104,7 @@ export default function FinalCTA() {
             className="mt-12 pt-8 border-t border-white/20"
           >
             <p className="text-sm text-primary-100">
-              <strong className="text-white">Miami Autocenter GmbH</strong> - 
+              <strong className="text-white">Miami Autocenter GmbH</strong> -
               Twój zaufany partner z oficjalnym dostępem do niemieckich giełd ubezpieczeniowych
             </p>
           </motion.div>

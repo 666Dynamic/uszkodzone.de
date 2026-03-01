@@ -13,8 +13,8 @@ export default function RestwertborsenPage() {
     <div className="pt-24 min-h-screen bg-gray-50">
       <div className="container-custom py-12">
         {/* Back Link */}
-        <Link 
-          href="/wiedza" 
+        <Link
+          href="/wiedza"
           className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 transition-colors"
         >
           <FiArrowLeft className="w-4 h-4" />
@@ -27,24 +27,24 @@ export default function RestwertborsenPage() {
             <FiInfo className="w-4 h-4" />
             <span>Kompletny przewodnik</span>
           </div>
-          
+
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
             Czym są <span className="text-primary-600">Restwertbörsen</span>?
           </h1>
-          
+
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Niemieckie giełdy pozostałości ubezpieczeniowych (Restwertbörsen) to zamknięte platformy aukcyjne, 
-            na których ubezpieczalnie sprzedają pojazdy po szkodach całkowitych. Dostęp mają tylko licencjonowane 
+            Niemieckie giełdy pozostałości ubezpieczeniowych (Restwertbörsen) to zamknięte platformy aukcyjne,
+            na których ubezpieczalnie sprzedają pojazdy po szkodach całkowitych. Dostęp mają tylko licencjonowane
             firmy motoryzacyjne.
           </p>
 
           {/* Main Content */}
           <div className="prose prose-lg max-w-none">
-            
+
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Co to jest Totalschaden?</h2>
-            
+
             <p className="text-gray-600 mb-6">
-              <strong>Totalschaden</strong> (szkoda całkowita) w niemieckim prawie ubezpieczeniowym oznacza pojazd, 
+              <strong>Totalschaden</strong> (szkoda całkowita) w niemieckim prawie ubezpieczeniowym oznacza pojazd,
               którego naprawa jest ekonomicznie nieopłacalna według zasady <strong>130%-Regelung</strong>.
             </p>
 
@@ -54,10 +54,10 @@ export default function RestwertborsenPage() {
                 Zasada 130%-Regelung
               </h3>
               <p className="mb-4">
-                W Niemczech obowiązuje specjalna zasada prawna: gdy <strong>(koszt naprawy + wartość rezydualna pojazdu)</strong> przekracza 
+                W Niemczech obowiązuje specjalna zasada prawna: gdy <strong>(koszt naprawy + wartość rezydualna pojazdu)</strong> przekracza
                 <strong> 130% wartości pojazdu przed szkodą</strong>, ubezpieczyciel MUSI sklasyfikować pojazd jako szkodę całkowitą.
               </p>
-              
+
               <div className="bg-white p-4 rounded mt-4">
                 <p className="font-bold mb-2">Przykład:</p>
                 <ul className="space-y-2 text-gray-700">
@@ -77,8 +77,8 @@ export default function RestwertborsenPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 1: Wypadek i wycena</h3>
                 <p className="text-gray-600">
-                  Po wypadku ubezpieczalnia wysyła rzeczoznawcę, który sporządza szczegółowy raport szkód. 
-                  Jeśli koszt naprawy + wartość rezydualna &gt; 130% wartości pojazdu → pojazd zostaje sklasyfikowany 
+                  Po wypadku ubezpieczalnia wysyła rzeczoznawcę, który sporządza szczegółowy raport szkód.
+                  Jeśli koszt naprawy + wartość rezydualna &gt; 130% wartości pojazdu → pojazd zostaje sklasyfikowany
                   jako Totalschaden.
                 </p>
               </div>
@@ -86,12 +86,12 @@ export default function RestwertborsenPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 2: Wykup przez ubezpieczyciela</h3>
                 <p className="text-gray-600">
-                  Ubezpieczalnia wypłaca właścicielowi odszkodowanie: <strong>(wartość pojazdu przed szkodą - wartość rezydualna)</strong>. 
+                  Ubezpieczalnia wypłaca właścicielowi odszkodowanie: <strong>(wartość pojazdu przed szkodą - wartość rezydualna)</strong>.
                   Właściciel oddaje pojazd ubezpieczalni, która przejmuje go na własność.
                 </p>
                 <div className="bg-gray-50 p-4 rounded mt-3">
                   <p className="text-sm text-gray-700">
-                    <strong>Przykład:</strong> BMW warte €20.000, wartość rezydualna €8.000 → właściciel dostaje €12.000 
+                    <strong>Przykład:</strong> BMW warte €20.000, wartość rezydualna €8.000 → właściciel dostaje €12.000
                     i oddaje auto ubezpieczalni.
                   </p>
                 </div>
@@ -100,7 +100,7 @@ export default function RestwertborsenPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 3: Wystawienie na Restwertbörse</h3>
                 <p className="text-gray-600">
-                  Ubezpieczalnia umieszcza pojazd na zamkniętej giełdzie pozostałości (np. car.casion, AUTO1.com, mobile.de Business). 
+                  Ubezpieczalnia umieszcza pojazd na zamkniętej giełdzie pozostałości (tzw. Restwertbörse).
                   Tylko zweryfikowane firmy motoryzacyjne z licencją mogą składać oferty.
                 </p>
               </div>
@@ -108,7 +108,7 @@ export default function RestwertborsenPage() {
               <div className="bg-white border rounded-lg p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Krok 4: Licytacja kopertowa</h3>
                 <p className="text-gray-600">
-                  Dealerzy składają oferty &quot;w ciemno&quot; (nie widząc ofert innych). Po zakończeniu okresu licytacji 
+                  Dealerzy składają oferty &quot;w ciemno&quot; (nie widząc ofert innych). Po zakończeniu okresu licytacji
                   ubezpieczalnia wybiera najwyższą ofertę. Oferent ma obowiązek kupić pojazd, jeśli jego oferta zostanie zaakceptowana.
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function RestwertborsenPage() {
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Główne platformy Restwertbörsen</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6">Jak działają wewnętrzne ekosystemy aukcyjne?</h2>
 
             <div className="space-y-4 mb-8">
               <div className="bg-white border rounded-lg p-5 flex items-start gap-4">
@@ -146,10 +146,10 @@ export default function RestwertborsenPage() {
                   <FiLock className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">car.casion</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Bezpośrednie połączenia z ubezpieczalniami</h3>
                   <p className="text-gray-600">
-                    Największa platforma w Niemczech. Ubezpieczalnie: AXA, Allianz, HUK-COBURG, DEVK, VHV. 
-                    Około 2.000+ aut dziennie.
+                    Platformy te agregują pojazdy od największych towarzystw ubezpieczeniowych w Niemczech (m.in. AXA, Allianz, HUK-COBURG).
+                    Stanowią wydzielony, zamknięty obieg B2B, niedostępny dla szerokiego rynku.
                   </p>
                 </div>
               </div>
@@ -159,23 +159,23 @@ export default function RestwertborsenPage() {
                   <FiGlobe className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">AUTO1.com (Wirkaufendeinauto.de)</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Skala 4500+ pojazdów dziennie</h3>
                   <p className="text-gray-600">
-                    Platforma B2B z aukcjami powypadkowymi. Dostęp dla dealerów z weryfikacją. 
-                    Około 1.500+ aut dziennie.
+                    Dzięki dostępowi do wielu odrębnych systemów licytacyjnych, licencjonowani pośrednicy
+                    mają dostęp do tysięcy aut dziennie z pełnymi, udokumentowanymi raportami od niezależnych rzeczoznawców.
                   </p>
                 </div>
               </div>
 
               <div className="bg-white border rounded-lg p-5 flex items-start gap-4">
                 <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <FiGlobe className="w-6 h-6 text-primary-600" />
+                  <FiAlertTriangle className="w-6 h-6 text-primary-600" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-1">mobile.de Business</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Wyłączenie rękojmi (B2B)</h3>
                   <p className="text-gray-600">
-                    Sekcja B2B największego niemieckiego serwisu motoryzacyjnego. Dostęp tylko dla firm. 
-                    Około 1.000+ aut dziennie.
+                    Licytacje kopertowe na szczeblu hurtowym wyłączają prawa konsumenckie i chronią zbywcę przed roszczeniami potransakcyjnymi.
+                    Dlatego ubezpieczalnie preferują zbycie wraku właśnie na tych platformach.
                   </p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function RestwertborsenPage() {
                 <li>• W niektórych przypadkach: licencja dealerska</li>
               </ul>
               <p className="text-gray-700 mt-4">
-                <strong>UszkodzoneZNiemiec.pl</strong> posiada wszystkie wymagane licencje i dostęp do głównych platform. 
+                <strong>UszkodzoneZNiemiec.pl</strong> posiada wszystkie wymagane licencje i dostęp do głównych platform.
                 Działamy jako pośrednik, kupując pojazdy w Twoim imieniu.
               </p>
             </div>

@@ -106,7 +106,7 @@ export default function JakToDzialaPage() {
             Jak to <span className="text-primary-600">działa?</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Prosty i przejrzysty proces zakupu powypadkowych aut z niemieckich giełd 
+            Prosty i przejrzysty proces zakupu powypadkowych aut z niemieckich giełd
             ubezpieczeniowych. Krok po kroku do Twojego wymarzonego auta.
           </p>
         </div>
@@ -121,9 +121,8 @@ export default function JakToDzialaPage() {
               return (
                 <div
                   key={step.number}
-                  className={`flex flex-col ${
-                    index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                  } gap-12 items-center`}
+                  className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                    } gap-12 items-center`}
                 >
                   {/* Icon & Number */}
                   <div className="flex-shrink-0">
@@ -202,9 +201,8 @@ export default function JakToDzialaPage() {
             {transportOptions.map((option) => (
               <div
                 key={option.title}
-                className={`card p-8 ${
-                  option.recommended ? 'ring-2 ring-primary-600 relative' : ''
-                }`}
+                className={`card p-8 ${option.recommended ? 'ring-2 ring-primary-600 relative' : ''
+                  }`}
               >
                 {option.recommended && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
@@ -241,7 +239,7 @@ export default function JakToDzialaPage() {
               Bezpieczeństwo i zaufanie
             </h2>
             <p className="text-xl text-primary-100 mb-8">
-              Miami Autocenter GmbH to oficjalnie zarejestrowana firma w Niemczech 
+              Miami Autocenter GmbH to oficjalnie zarejestrowana firma w Niemczech
               z pełnym dostępem do zamkniętych giełd ubezpieczeniowych.
             </p>
             <div className="grid sm:grid-cols-3 gap-6">

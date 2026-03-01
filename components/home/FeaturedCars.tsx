@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { FiArrowRight, FiMapPin, FiCalendar, FiActivity } from 'react-icons/fi'
 
-// Mock data - will be replaced with real car.casion API data
+// Mock data - will be replaced with real API data
 const featuredCars = [
   {
     id: 1,
@@ -108,7 +108,7 @@ export default function FeaturedCars() {
               <div className="relative h-48 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
                 <div className="text-gray-400 text-sm text-center p-4">
                   {car.make} {car.model}
-                  <div className="text-xs mt-2">Image from car.casion</div>
+                  <div className="text-xs mt-2">Fot. z raportu rzeczoznawcy</div>
                 </div>
                 {/* Time Badge */}
                 <div className="absolute top-3 right-3 bg-primary-600 text-white px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1">

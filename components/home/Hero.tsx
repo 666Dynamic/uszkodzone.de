@@ -38,8 +38,8 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
-              Dostęp do 4.500+ aut dziennie z niemieckich ubezpieczalni. 
-              Licytujesz auta, które w Niemczech są nieopłacalne do naprawy (130%-Regelung), 
+              Dostęp do 4.500+ aut dziennie z niemieckich ubezpieczalni.
+              Licytujesz auta, które w Niemczech są nieopłacalne do naprawy (130%-Regelung),
               ale w Polsce można je tanio przywrócić do idealnego stanu.
             </p>
 
@@ -96,7 +96,7 @@ export default function Hero() {
                   <div className="text-xl">Aut dziennie</div>
                   <div className="mt-8 text-sm opacity-90">
                     Dashboard preview<br />
-                    (Add actual car.casion screenshot)
+                    (Zrzut z systemu aukcyjnego)
                   </div>
                 </div>
               </div>
