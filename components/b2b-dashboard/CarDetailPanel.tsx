@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { CarOffer } from './types'
-import { Clock, ShieldCheck, CheckCircle2, Settings, FileText, BadgeInfo, Camera, ChevronRight, AlertCircle, Info, Maximize2 } from 'lucide-react'
+import { Clock, ShieldCheck, CheckCircle2, Settings, FileText, BadgeInfo, Camera, ChevronRight, ChevronLeft, AlertCircle, Info, Maximize2, X } from 'lucide-react'
 
 interface CarDetailPanelProps {
     car: CarOffer | null;
@@ -11,11 +11,22 @@ interface CarDetailPanelProps {
 export default function CarDetailPanel({ car }: CarDetailPanelProps) {
     const [activeTab, setActiveTab] = useState<'ausstattung' | 'bericht' | 'kalkulation'>('ausstattung');
     const [activeImageIdx, setActiveImageIdx] = useState(0);
+    const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
     useEffect(() => {
         setActiveImageIdx(0);
         setActiveTab('ausstattung');
     }, [car?.id]);
+
+    const handlePrevImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (activeImageIdx > 0) setActiveImageIdx(activeImageIdx - 1);
+    };
+
+    const handleNextImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (activeImageIdx < (car?.imageUrls.length || 1) - 1) setActiveImageIdx(activeImageIdx + 1);
+    };
 
     if (!car) {
         return (
@@ -79,12 +90,34 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                                     alt="Pojazd"
                                     className="w-full h-full object-cover transition-opacity duration-300"
                                 />
+
+                                {/* Navigation Arrows */}
+                                {activeImageIdx > 0 && (
+                                    <button
+                                        onClick={handlePrevImage}
+                                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-sm"
+                                    >
+                                        <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    </button>
+                                )}
+                                {activeImageIdx < car.imageUrls.length - 1 && (
+                                    <button
+                                        onClick={handleNextImage}
+                                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white p-1.5 sm:p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-sm"
+                                    >
+                                        <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                                    </button>
+                                )}
+
                                 <div className="absolute top-2 left-2 pointer-events-none">
                                     <div className="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm flex items-center">
                                         <ShieldCheck className="w-3 h-3 mr-1.5 text-emerald-400" /> VIN: {car.vin}
                                     </div>
                                 </div>
-                                <button className="absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 backdrop-blur-md text-white px-2 py-1 rounded text-[10px] font-bold flex items-center transition-colors">
+                                <button
+                                    onClick={() => setIsGalleryOpen(true)}
+                                    className="absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 backdrop-blur-md text-white px-2 py-1 rounded text-[10px] font-bold flex items-center transition-colors z-10"
+                                >
                                     <Maximize2 className="w-3 h-3 mr-1.5" /> Powiększ
                                 </button>
                                 {/* Camera icon showing current / total */}
@@ -355,6 +388,64 @@ export default function CarDetailPanel({ car }: CarDetailPanelProps) {
                 </div>
             </div>
 
+            {/* Fullscreen Gallery Modal */}
+            {isGalleryOpen && (
+                <div className="fixed inset-0 z-50 bg-black/95 flex flex-col items-center justify-center">
+                    <button
+                        onClick={() => setIsGalleryOpen(false)}
+                        className="absolute top-4 right-4 text-white hover:text-slate-300 bg-white/10 p-2 rounded-full transition-colors z-50"
+                    >
+                        <X className="w-6 h-6" />
+                    </button>
+
+                    <div className="text-white absolute top-6 left-6 font-bold text-sm tracking-widest bg-black/50 px-3 py-1.5 rounded-md">
+                        {activeImageIdx + 1} / {car.imageUrls.length}
+                    </div>
+
+                    <div className="relative w-full max-w-6xl max-h-[85vh] flex items-center justify-center p-4">
+                        <img
+                            src={car.imageUrls[activeImageIdx]}
+                            alt={`Fullscreen image ${activeImageIdx + 1}`}
+                            className="max-w-full max-h-[80vh] object-contain select-none"
+                        />
+
+                        {/* Huge Arrows for Fullscreen */}
+                        {activeImageIdx > 0 && (
+                            <button
+                                onClick={handlePrevImage}
+                                className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full transition-colors"
+                            >
+                                <ChevronLeft className="w-8 h-8" />
+                            </button>
+                        )}
+                        {activeImageIdx < car.imageUrls.length - 1 && (
+                            <button
+                                onClick={handleNextImage}
+                                className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-4 rounded-full transition-colors"
+                            >
+                                <ChevronRight className="w-8 h-8" />
+                            </button>
+                        )}
+                    </div>
+
+                    {/* Thumbnail strip at the bottom */}
+                    <div className="absolute bottom-6 w-full max-w-4xl px-8 flex justify-center gap-2 overflow-x-auto scrollbar-none py-2">
+                        {car.imageUrls.map((url, idx) => (
+                            <button
+                                key={`fs-thumb-${idx}`}
+                                onClick={() => setActiveImageIdx(idx)}
+                                className={`
+                                   shrink-0 rounded overflow-hidden transition-all
+                                   w-16 h-12 border-2
+                                   ${activeImageIdx === idx ? 'border-indigo-400 opacity-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'}
+                                 `}
+                            >
+                                <img src={url} alt={`thumb ${idx}`} className="w-full h-full object-cover" />
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
